@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.0.5] - 2026-06-13
+
+### Fixed
+
+- Hardened the public secret-scan workflow with scheduled coverage,
+  full-history checkout, and explicit gitleaks-compatible provenance markers.
+- Updated release memory facts so adapter health checks can prove the current
+  supported release from agent-only knowledge.
+
 ## [1.0.4] - 2026-06-13
 
 ### Fixed
