@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.6] - 2026-06-13
+
+### Fixed
+
+- Normalized all MiMoCode Serena memories to the strict metadata and
+  source-of-truth template used by the root release validators.
+
 ## [1.0.5] - 2026-06-13
 
 ### Fixed

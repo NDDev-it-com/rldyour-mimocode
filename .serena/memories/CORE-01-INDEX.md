@@ -1,33 +1,92 @@
+<!-- Memory Metadata
+Last updated: 2026-06-13
+Last verified: 2026-06-13
+Last commit: 4e5482e1da7b648ccc7df61f88974e767587875e fix(ci): harden MiMoCode secret scan release metadata
+Scope: MiMoCode adapter memory index
+Area: CORE-->
+
 # CORE-01-INDEX
 
-## Purpose
+## Scope
+MiMoCode adapter memory index.
 
-Index the MiMoCode adapter durable memory set.
+## Current source of truth
+- `path:VERSION`
+- `path:config/rldyour-contract.json`
+- `path:config/mimocode-baseline.json`
+- `path:.mimocode/mimocode.jsonc`
+- `path:MEMORY.md`
+- `path:.serena/memories/MIMOCODE-01-ADAPTER-SURFACE.md`
+- `path:.serena/memories/MEMORY-01-MIMOCODE-SERENA-BOUNDARY.md`
+- `path:.serena/memories/BROWSER-01-VALIDATION.md`
+- `path:.serena/memories/RELEASE-01-VALIDATION.md`
 
-## Current Facts
+## Last verified
+- date: 2026-06-13
+- commit: `4e5482e1da7b648ccc7df61f88974e767587875e`
+- checked by: Codex rldyour-flow sync
 
+## Facts
 - `rldyour-mimocode` is the MiMoCode-native adapter repository.
+- The current adapter release is `1.0.6`.
+- The runtime baseline is MiMoCode `0.1.0` with binary `mimo`.
 - The adapter owns `.mimocode` config, agent, command, skill, MCP, browser,
   cmux-worker, and runtime memory projection surfaces.
-- Serena memories are durable cross-tool facts; MiMoCode `MEMORY.md` is a
-  runtime projection.
+- Serena memories are durable cross-tool facts. MiMoCode `MEMORY.md` is a
+  tracked MiMoCode runtime projection generated from verified facts.
 
 ## Evidence
+- `path:VERSION`
+- `path:README.md`
+- `path:config/rldyour-contract.json`
+- `path:config/mimocode-baseline.json`
+- `path:.mimocode/mimocode.jsonc`
+- `path:MEMORY.md`
 
-- `config/rldyour-contract.json`
-- `config/mimocode-baseline.json`
-- `.mimocode/mimocode.jsonc`
-- `MEMORY.md`
-- `.serena/memories/MIMOCODE-01-ADAPTER-SURFACE.md`
-- `.serena/memories/MEMORY-01-MIMOCODE-SERENA-BOUNDARY.md`
-- `.serena/memories/BROWSER-01-VALIDATION.md`
-- `.serena/memories/RELEASE-01-VALIDATION.md`
+## Known pitfalls
+- Do not infer installed runtime state from this memory. `mimo --version` and
+  `scripts/doctor_system_mimocode.sh --redact` are the runtime evidence.
 
-## Operational Rules
+## Update policy
+Update after verified changes to adapter version, runtime baseline, native
+surface layout, MCP/browser policy, memory boundary, or release gates.
 
-- Keep memories short and evidence-backed.
-- Mark runtime facts `NOT_PROVEN` when the installed `mimo` binary is absent.
+## Delete / merge policy
+- Delete or merge only when the source-of-truth files no longer support this
+  memory and the replacement memory preserves the durable facts.
 
-## Last Verified
+## Applies to
+- `rldyour-mimocode`
+- `modules/rldyour-mimocode`
 
-2026-06-13
+## Source of truth
+- The `Current source of truth` section above, plus current code,
+  configuration, tests, git state, and live GitHub release state where this
+  memory explicitly references release surfaces.
+
+## Invariants
+- MiMoCode is a first-class native adapter, not an OpenCode alias.
+- Code, configuration, tests, validators, git state, and live GitHub state
+  override this memory when they disagree.
+
+## Current State
+- See `Facts` for current durable facts.
+
+## Do Not Infer
+- Do not infer product versions, runtime versions, permissions, release state,
+  security posture, or tool behavior from this memory without checking the
+  source of truth.
+
+## Update Triggers
+- Update after verified changes to source-of-truth files, runtime baselines,
+  release tuple, validation gates, live release state, or durable agent
+  workflow contracts.
+
+## Validation Commands
+- `python3 scripts/validate_fast.sh`
+- `python3 -m pytest -q`
+- `python3 scripts/validate_mimocode_memory_boundary.py --strict`
+
+## Repair Procedure
+- Re-read source-of-truth files, update only verified current facts, move stale
+  facts to historical evidence, then rerun the validation commands.
