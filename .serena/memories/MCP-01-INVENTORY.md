@@ -1,7 +1,7 @@
 <!-- Memory Metadata
 Last updated: 2026-06-13
 Last verified: 2026-06-13
-Last commit: f247b8a6425c535e9674f4db1ca892e310197f64 fix(fullrepo): move MiMoCode Serena context off main
+Last commit: 5ff1946483f51519450a1f6e95b7313df52af185 fix(release): restore MiMoCode changelog unreleased section
 Scope: MiMoCode MCP inventory
 Area: MCP-->
 
@@ -17,7 +17,7 @@ MiMoCode MCP inventory.
 
 ## Last verified
 - date: 2026-06-13
-- commit: `f247b8a6425c535e9674f4db1ca892e310197f64`
+- commit: `5ff1946483f51519450a1f6e95b7313df52af185`
 - checked by: Codex rldyour-flow sync
 
 ## Facts
