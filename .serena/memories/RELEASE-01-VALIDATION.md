@@ -6,7 +6,7 @@ Record release validation requirements for the current MiMoCode adapter release.
 
 ## Current Facts
 
-- Current adapter release is `1.0.1`.
+- Current adapter release is `1.0.5`.
 - Initial adapter release was `1.0.0`.
 - Runtime baseline is MiMoCode `0.1.0`.
 - Public CI must use GitHub-hosted runners and SHA-pinned actions.
@@ -21,6 +21,7 @@ Record release validation requirements for the current MiMoCode adapter release.
 - `SECURITY.md`
 - `.github/branch-protection/main.json`
 - `.github/workflows/validate.yml`
+- `.github/workflows/secret-scan.yml`
 - `scripts/validate_fast.sh`
 - `scripts/doctor_system_mimocode.sh`
 
