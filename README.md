@@ -5,11 +5,13 @@ rldyour AI CLI control plane. It is a public AGPL-3.0-or-later configuration
 repository that projects rldyour lifecycle, memory, MCP, browser-provider, and
 cmux-worker policies into MiMoCode's native `.mimocode` surfaces.
 
+rldyour AI CLI configuration for MiMoCode: native .mimocode config, build/plan/compose agents, persistent memory projection, commands, skills, MCP, browser routing, and runtime validation.
+
 Current release:
 
 | Surface | Value |
 | --- | --- |
-| Adapter version | `1.0.3` |
+| Adapter version | `1.0.4` |
 | Runtime baseline | MiMoCode `0.1.0` |
 | Runtime binary | `mimo` |
 | Primary install channel | official Xiaomi MiMo installer / GitHub release assets |

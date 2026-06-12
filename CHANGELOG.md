@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.4] - 2026-06-13
+
+### Fixed
+
+- Added the canonical GitHub repository description to README and
+  CONTRIBUTING so public metadata surface validation can prove exact parity.
+
 ## [1.0.3] - 2026-06-13
 
 ### Fixed
