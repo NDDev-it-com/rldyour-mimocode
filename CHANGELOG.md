@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.0.1] - 2026-06-13
+
+### Fixed
+
+- Added complete public-repository governance and release supply-chain surfaces
+  for root policy validation.
+- Kept `1.0.0` as the initial public tag and advanced the active supported
+  adapter patch after follow-up release-wrapper hardening.
+
 ## [1.0.0] - 2026-06-13
 
 ### Added

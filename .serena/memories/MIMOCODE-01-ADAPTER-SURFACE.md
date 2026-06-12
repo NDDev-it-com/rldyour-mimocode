@@ -6,7 +6,7 @@ Record native MiMoCode adapter surfaces.
 
 ## Current Facts
 
-- Adapter version is `1.0.0`.
+- Adapter version is `1.0.1`.
 - Runtime baseline is MiMoCode `0.1.0` with binary `mimo`.
 - Primary runtime install channel is the official Xiaomi MiMo installer pinned
   to `0.1.0`; npm `@mimo-ai/cli@0.1.0` is secondary provenance.

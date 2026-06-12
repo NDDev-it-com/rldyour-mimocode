@@ -5,14 +5,16 @@ import argparse
 import sys
 
 from mimocode_contract import BASELINE, CONTRACT, Failure, load_json, require
+from mimocode_contract import ROOT
 
 
 def validate() -> None:
     baseline = load_json(BASELINE)
     contract = load_json(CONTRACT)
+    version = (ROOT / "VERSION").read_text(encoding="utf-8").strip()
     adapter = contract.get("adapter") or {}
     require(adapter.get("id") == "mimocode", "contract adapter id must be mimocode")
-    require(adapter.get("version") == "1.0.0", "adapter version must be 1.0.0")
+    require(adapter.get("version") == version, "contract adapter version must match VERSION")
     require(adapter.get("runtime_version") == "0.1.0", "contract runtime version must be 0.1.0")
     require(baseline.get("upstream_release") == "v0.1.0", "baseline upstream release must be v0.1.0")
     require(baseline.get("binary") == "mimo", "runtime binary must be mimo")

@@ -9,7 +9,7 @@ Current release:
 
 | Surface | Value |
 | --- | --- |
-| Adapter version | `1.0.0` |
+| Adapter version | `1.0.1` |
 | Runtime baseline | MiMoCode `0.1.0` |
 | Runtime binary | `mimo` |
 | Primary install channel | official Xiaomi MiMo installer / GitHub release assets |
