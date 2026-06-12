@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.7] - 2026-06-13
+
+### Fixed
+
+- Moved Serena project knowledge out of the normal branch so MiMoCode follows
+  the same agent-only/fullrepo boundary as the other fullrepo-managed adapters.
+
 ## [1.0.6] - 2026-06-13
 
 ### Fixed
