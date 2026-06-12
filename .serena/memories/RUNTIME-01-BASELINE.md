@@ -1,7 +1,7 @@
 <!-- Memory Metadata
 Last updated: 2026-06-13
 Last verified: 2026-06-13
-Last commit: 4e5482e1da7b648ccc7df61f88974e767587875e fix(ci): harden MiMoCode secret scan release metadata
+Last commit: f247b8a6425c535e9674f4db1ca892e310197f64 fix(fullrepo): move MiMoCode Serena context off main
 Scope: MiMoCode runtime baseline and install proof
 Area: RUNTIME-->
 
@@ -19,7 +19,7 @@ MiMoCode runtime baseline and install proof.
 
 ## Last verified
 - date: 2026-06-13
-- commit: `4e5482e1da7b648ccc7df61f88974e767587875e`
+- commit: `f247b8a6425c535e9674f4db1ca892e310197f64`
 - checked by: Codex rldyour-flow sync
 
 ## Facts
