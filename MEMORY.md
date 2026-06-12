@@ -8,7 +8,7 @@ This file is the MiMoCode-native project memory projection for the
 Current facts:
 
 1. Adapter id: `mimocode`.
-2. Adapter version: `1.0.1`.
+2. Adapter version: `1.0.2`.
 3. Runtime baseline: MiMoCode `0.1.0`.
 4. Runtime binary: `mimo`.
 5. Upstream source: `https://github.com/XiaomiMiMo/MiMo-Code`.
