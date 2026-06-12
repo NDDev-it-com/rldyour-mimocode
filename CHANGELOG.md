@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3] - 2026-06-13
+
+### Fixed
+
+- Normalized the `NOTICE` author additional-grant sentence onto one line so the
+  root AGPL metadata validator can prove the exact policy wording.
+
 ## [1.0.2] - 2026-06-13
 
 ### Fixed
