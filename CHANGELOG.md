@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2] - 2026-06-13
+
+### Fixed
+
+- Added Windows to the public cross-platform smoke matrix so MiMoCode matches
+  the root public-adapter runner coverage policy from its first supported line.
+
 ## [1.0.1] - 2026-06-13
 
 ### Fixed
