@@ -1,0 +1,25 @@
+name: Dependency check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  dependency-check:
+    name: Dependency check
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
+      - name: Check dependency policy
+        run: |
+          set -euo pipefail
+          python3 scripts/validate_mimocode_runtime_baseline.py --strict
+          python3 scripts/validate_mimocode_mcp_inventory.py --strict

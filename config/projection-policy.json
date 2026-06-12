@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "native_root": ".mimocode",
+  "required_agents": [
+    "rldyour-plan",
+    "rldyour-build",
+    "rldyour-compose",
+    "rldyour-review",
+    "rldyour-security-review",
+    "rldyour-quality-review",
+    "rldyour-browser-worker",
+    "rldyour-design-worker",
+    "rldyour-memory-sync"
+  ],
+  "required_commands": [
+    "ry-init",
+    "ry-start",
+    "ry-newp",
+    "ry-review",
+    "ry-repair",
+    "ry-deploy",
+    "ry-sync",
+    "browser-review",
+    "design-review",
+    "security-review",
+    "rules-review"
+  ],
+  "required_skills": [
+    "ry-repair",
+    "ry-start",
+    "flow-post-task-sync",
+    "browser-review",
+    "design-review",
+    "security-review",
+    "serena-memory-sync",
+    "cmux-worker"
+  ],
+  "russian_first_invocation_metadata": true,
+  "commands_directory": ".mimocode/command",
+  "upstream_commands_directory_note": "XiaomiMiMo/MiMo-Code repository currently uses .mimocode/command; docs also describe commands/ discovery. This adapter follows the upstream repository layout."
+}

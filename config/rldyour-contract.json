@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "adapter": {
+    "id": "mimocode",
+    "name": "rldyour-mimocode",
+    "version": "1.0.0",
+    "runtime": "mimocode",
+    "runtime_binary": "mimo",
+    "runtime_package": "@mimo-ai/cli",
+    "runtime_version": "0.1.0",
+    "license": "AGPL-3.0-or-later"
+  },
+  "native_surfaces": [
+    "mimocode_jsonc",
+    "mimocode_tui_json",
+    "mimocode_agents",
+    "mimocode_commands",
+    "mimocode_skills",
+    "mimocode_glossary",
+    "mimocode_plugins",
+    "mimocode_themes",
+    "mimocode_mcp",
+    "mimocode_permissions",
+    "mimocode_memory_projection",
+    "mimocode_goal_stop_condition",
+    "mimocode_dream_distill"
+  ],
+  "system_config_targets": [
+    "${MIMOCODE_HOME:-$HOME/.mimocode}",
+    "${XDG_CONFIG_HOME:-$HOME/.config}/mimocode"
+  ],
+  "mcp_servers": [
+    "serena",
+    "chrome-devtools",
+    "sequential-thinking",
+    "shadcn",
+    "dart-flutter",
+    "context7",
+    "github",
+    "deepwiki",
+    "grep",
+    "figma",
+    "openai-docs"
+  ],
+  "browser_provider_model": {
+    "webwright": "high-level long-horizon browser workflows",
+    "playwright-cli": "low-level screenshots, snapshots, traces, and visual evidence",
+    "chrome-devtools-mcp": "console, network, performance, Lighthouse, memory, and live debugging",
+    "mimocode_builtin_browser": "disabled until separately modeled as an approved provider"
+  },
+  "memory_model": {
+    "serena": "cross-tool release-grade source-of-truth memories",
+    "mimocode_memory_md": "runtime-native projection generated from verified current facts",
+    "runtime_artifacts": [
+      "checkpoint.md",
+      "notes.md",
+      "tasks/<id>/progress.md",
+      "SQLite memory databases"
+    ],
+    "dream_distill_review_required": true
+  },
+  "orchestration_boundary": {
+    "mimocode_compose_is_cmux_orchestrator": false,
+    "mimocode_background_execution_is_cmux_orchestrator": false,
+    "cmux_orchestrator_requires_visible_terminal_session": true,
+    "visible_worker_supported": true
+  },
+  "hard_invariants": [
+    "mimocode_is_native_adapter_not_opencode_alias",
+    "no_committed_credentials",
+    "no_runtime_checkpoint_notes_tasks",
+    "no_hidden_background_orchestrator",
+    "mimocode_permissions_are_not_security_sandbox"
+  ]
+}
