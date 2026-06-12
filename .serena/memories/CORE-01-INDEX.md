@@ -1,7 +1,7 @@
 <!-- Memory Metadata
 Last updated: 2026-06-13
 Last verified: 2026-06-13
-Last commit: 5ff1946483f51519450a1f6e95b7313df52af185 fix(release): restore MiMoCode changelog unreleased section
+Last commit: 578c1265f6439d0d83866b03d2d4462068b61726 fix(release): empty MiMoCode unreleased changelog section
 Scope: MiMoCode adapter memory index
 Area: CORE-->
 
@@ -23,12 +23,12 @@ MiMoCode adapter memory index.
 
 ## Last verified
 - date: 2026-06-13
-- commit: `5ff1946483f51519450a1f6e95b7313df52af185`
+- commit: `578c1265f6439d0d83866b03d2d4462068b61726`
 - checked by: Codex rldyour-flow sync
 
 ## Facts
 - `rldyour-mimocode` is the MiMoCode-native adapter repository.
-- The current adapter release is `1.0.8`.
+- The current adapter release is `1.0.9`.
 - The runtime baseline is MiMoCode `0.1.0` with binary `mimo`.
 - The adapter owns `.mimocode` config, agent, command, skill, MCP, browser,
   cmux-worker, and runtime memory projection surfaces.
