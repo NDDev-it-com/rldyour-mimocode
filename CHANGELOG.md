@@ -1,5 +1,18 @@
 # Changelog
 
+## [Unreleased]
+
+### Changed
+
+- Reserved for the next MiMoCode adapter patch.
+
+## [1.0.8] - 2026-06-13
+
+### Fixed
+
+- Restored the standard `[Unreleased]` changelog section required by the
+  root release-version policy.
+
 ## [1.0.7] - 2026-06-13
 
 ### Fixed
