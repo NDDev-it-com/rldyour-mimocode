@@ -1,0 +1,13 @@
+rldyour-mimocode
+Copyright (C) 2026 Danil Silantyev (github:rldyourmnd), CEO NDDev
+
+This repository is licensed under AGPL-3.0-or-later.
+Current adapter release: 1.0.0.
+
+Danil Silantyev remains the copyright holder for this first-party
+rldyour configuration repository and may issue additional licensing grants
+separately.
+
+MiMoCode itself is a separate upstream project from XiaomiMiMo/MiMo-Code.
+This repository does not vendor Xiaomi MiMoCode source code, binaries,
+logos, QR codes, or trademarks.

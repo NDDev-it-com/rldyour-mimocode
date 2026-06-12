@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "source_of_truth": "current code/config/tests and root control-plane tuple",
+  "serena_memory_role": "cross-tool durable release facts",
+  "mimocode_memory_role": "MiMoCode-native runtime context projection",
+  "tracked_projection": "MEMORY.md",
+  "ignored_runtime_artifacts": [
+    "checkpoint.md",
+    "notes.md",
+    "tasks/",
+    ".mimocode/**/*.db",
+    ".mimocode/**/*.sqlite"
+  ],
+  "dream_policy": {
+    "may_suggest_memory_updates": true,
+    "may_write_serena_directly": false,
+    "requires_source_backed_review": true
+  },
+  "distill_policy": {
+    "may_suggest_skills_agents_commands": true,
+    "must_be_reviewable_source_change": true,
+    "may_silently_commit": false
+  }
+}

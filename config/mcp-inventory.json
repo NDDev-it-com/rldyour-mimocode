@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "source_format": "mimocode_jsonc_mcp",
+  "source_path": ".mimocode/mimocode.jsonc",
+  "runtime_format": "mimocode_json_or_jsonc",
+  "runtime_materialized_by": "scripts/install_system_mimocode.sh",
+  "required_servers": [
+    "serena",
+    "chrome-devtools",
+    "sequential-thinking",
+    "shadcn",
+    "dart-flutter",
+    "context7",
+    "github",
+    "deepwiki",
+    "grep",
+    "figma",
+    "openai-docs"
+  ],
+  "openai_docs_alias": "openai-docs",
+  "github_toolsets": [
+    "context",
+    "repos",
+    "issues",
+    "pull_requests",
+    "users"
+  ],
+  "positive_inventory_only": true
+}
