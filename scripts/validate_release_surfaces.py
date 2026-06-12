@@ -16,7 +16,6 @@ def validate() -> None:
     version = (ROOT / "VERSION").read_text(encoding="utf-8").strip()
     contract = load_json(CONTRACT)
     require(VERSION_RE.fullmatch(version) is not None, "VERSION must be numeric semver")
-    require(version == "1.0.0", "initial MiMoCode adapter release must be 1.0.0")
     require(contract.get("adapter", {}).get("version") == version, "contract version drift")
     require("GNU AFFERO GENERAL PUBLIC LICENSE" in (ROOT / "LICENSE").read_text(encoding="utf-8").splitlines()[0], "LICENSE must be canonical AGPL text")
     for rel_path in ("README.md", "CHANGELOG.md", "SECURITY.md", "NOTICE", "THIRD_PARTY_NOTICES.md", "pyproject.toml"):

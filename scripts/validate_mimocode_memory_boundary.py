@@ -9,8 +9,9 @@ from mimocode_contract import MEMORY_POLICY, ROOT, Failure, load_json, require
 
 def validate() -> None:
     policy = load_json(MEMORY_POLICY)
+    version = (ROOT / "VERSION").read_text(encoding="utf-8").strip()
     memory = (ROOT / "MEMORY.md").read_text(encoding="utf-8")
-    require("Adapter version: `1.0.0`" in memory, "MEMORY.md must record current adapter version")
+    require(f"Adapter version: `{version}`" in memory, "MEMORY.md must record current adapter version")
     require("Runtime baseline: MiMoCode `0.1.0`" in memory, "MEMORY.md must record current runtime baseline")
     require("Serena memories are the cross-tool source of truth" in memory, "MEMORY.md must preserve Serena source-of-truth boundary")
     for rel_path in ("checkpoint.md", "notes.md"):

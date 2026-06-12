@@ -4,7 +4,8 @@
 
 | Version | Supported |
 | --- | --- |
-| `1.0.0` | yes |
+| Current exact tag `1.0.1` | yes |
+| `1.0.x` latest released patch | yes |
 
 ## Boundary
 
