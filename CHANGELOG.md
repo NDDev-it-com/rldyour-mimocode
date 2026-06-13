@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## [1.0.11] - 2026-06-13
+
+### Changed
+
+- Harden MiMoCode native config schema (resolvable OpenCode schema), document .json vs .jsonc naming, and enforce permission/MCP security-boundary docs with new validators.
+
 ## [1.0.10] - 2026-06-13
 
 ### Fixed

@@ -1,7 +1,7 @@
 <!-- Memory Metadata
 Last updated: 2026-06-13
 Last verified: 2026-06-13
-Last commit: 54d5627fc8736abaae9018d673163ae29614d7e4 fix(ci): repin required action workflows
+Last commit: f19bd3c903afdaff040ba43570bfd2c496106652 chore(release): bump MiMoCode to 1.0.11
 Scope: MiMoCode browser-provider routing
 Area: BROWSER-->
 
@@ -18,7 +18,7 @@ MiMoCode browser-provider routing.
 
 ## Last verified
 - date: 2026-06-13
-- commit: `54d5627fc8736abaae9018d673163ae29614d7e4`
+- commit: `f19bd3c903afdaff040ba43570bfd2c496106652`
 - checked by: Codex rldyour-flow sync
 
 ## Facts

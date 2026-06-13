@@ -11,7 +11,7 @@ Current release:
 
 | Surface | Value |
 | --- | --- |
-| Adapter version | `1.0.10` |
+| Adapter version | `1.0.11` |
 | Runtime baseline | MiMoCode `0.1.0` |
 | Runtime binary | `mimo` |
 | Primary install channel | official Xiaomi MiMo installer / GitHub release assets |
@@ -32,6 +32,10 @@ adapter owns MiMoCode-native project configuration:
 - `.mimocode/plugins/`
 - `.mimocode/themes/`
 - `MEMORY.md`
+
+Project config uses `.mimocode/mimocode.jsonc` (JSONC). See
+`docs/native-surfaces.md` for the `.json` vs `.jsonc` naming policy and the
+OpenCode `$schema` selection.
 
 MiMoCode compose, subagents, background work, `/goal`, `/dream`, and `/distill`
 are MiMoCode-native session features. They are not rldyour cmux orchestrator
