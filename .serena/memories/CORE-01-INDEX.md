@@ -28,7 +28,7 @@ MiMoCode adapter memory index.
 
 ## Facts
 - `rldyour-mimocode` is the MiMoCode-native adapter repository.
-- The current adapter release is `1.0.10`.
+- The current adapter release is `1.0.11`.
 - The runtime baseline is MiMoCode `0.1.0` with binary `mimo`.
 - The adapter owns `.mimocode` config, agent, command, skill, MCP, browser,
   cmux-worker, and runtime memory projection surfaces.

@@ -26,7 +26,7 @@ MiMoCode native adapter surface.
 - checked by: Codex rldyour-flow sync
 
 ## Facts
-- Adapter version is `1.0.10`.
+- Adapter version is `1.0.11`.
 - Runtime baseline is MiMoCode `0.1.0` with binary `mimo`.
 - Primary runtime install channel is the official Xiaomi MiMo installer pinned
   to `0.1.0`; npm `@mimo-ai/cli@0.1.0` is secondary provenance.
