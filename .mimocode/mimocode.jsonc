@@ -155,7 +155,7 @@
       "type": "local",
       "command": [
         "bunx",
-        "@upstash/context7-mcp@3.2.0"
+        "@upstash/context7-mcp@3.2.1"
       ],
       "enabled": true,
       "environment": {
