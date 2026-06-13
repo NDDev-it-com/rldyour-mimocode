@@ -33,6 +33,10 @@ adapter owns MiMoCode-native project configuration:
 - `.mimocode/themes/`
 - `MEMORY.md`
 
+Project config uses `.mimocode/mimocode.jsonc` (JSONC). See
+`docs/native-surfaces.md` for the `.json` vs `.jsonc` naming policy and the
+OpenCode `$schema` selection.
+
 MiMoCode compose, subagents, background work, `/goal`, `/dream`, and `/distill`
 are MiMoCode-native session features. They are not rldyour cmux orchestrator
 mode and must not be described as hidden daemon orchestration.

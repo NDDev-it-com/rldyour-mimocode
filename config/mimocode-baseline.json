@@ -21,9 +21,11 @@
     "release_policy": "secondary channel only until root live validator keeps it green"
   },
   "config_schema": {
-    "current_docs_schema": "https://mimo.xiaomi.com//config.json",
+    "current_docs_schema": "https://opencode.ai/config.json",
     "upstream_repo_example_schema": "https://opencode.ai/config.json",
-    "selected_project_schema": "https://mimo.xiaomi.com//config.json",
+    "selected_project_schema": "https://opencode.ai/config.json",
+    "selected_schema_reason": "MiMoCode is an OpenCode fork; its project config is OpenCode-config compatible and the OpenCode schema URL resolves. The earlier https://mimo.xiaomi.com//config.json value had a doubled slash and returned HTTP 404. Upstream MiMo-Code also selects the OpenCode schema.",
+    "schema_extension_note": "MiMoCode-native keys (for example checkpoint and maxMode) extend the OpenCode schema and may surface as editor schema warnings; runtime config correctness is enforced by scripts/validate_mimocode_config.py, not by the remote schema.",
     "runtime_schema_validation": "NOT_PROVEN_UNTIL_MIMO_BINARY_AVAILABLE"
   },
   "forbidden_as_stable": [
