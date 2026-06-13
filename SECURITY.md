@@ -14,7 +14,8 @@ validation files for MiMoCode. It does not vendor Xiaomi MiMoCode source code or
 binary assets.
 
 MiMoCode itself runs locally with shell, file, MCP, provider, and session
-capabilities. Its permission prompts are not a security sandbox. Treat any
+capabilities. Its permission prompts are not a security sandbox, and configured
+MCP servers run outside the trust boundary and execute as trusted code. Treat any
 full-auto/yolo posture as owner-approved local automation only. Use a container
 or VM when a true isolation boundary is required.
 

@@ -9,7 +9,7 @@ from mimocode_contract import CONFIG, TUI, Failure, load_json, load_jsonc, requi
 
 def validate() -> None:
     config = load_jsonc(CONFIG)
-    require(config.get("$schema") == "https://mimo.xiaomi.com//config.json", "MiMoCode config must use the current Xiaomi MiMo schema URL")
+    require(config.get("$schema") == "https://opencode.ai/config.json", "MiMoCode config must use the resolvable OpenCode-compatible schema URL (see scripts/validate_mimocode_schema_url.py)")
     require(config.get("provider") == {}, "committed provider config must not contain credentials or provider defaults")
     require(config.get("share") == "disabled", "committed config must disable auto-sharing")
     require(config.get("autoupdate") is False, "committed config must disable unpinned runtime auto-update")
