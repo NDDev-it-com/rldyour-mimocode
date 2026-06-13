@@ -2,6 +2,13 @@
 
 ## [Unreleased]
 
+## [1.0.10] - 2026-06-13
+
+### Fixed
+
+- Re-pinned Actionlint and CodeQL workflow actions to live, resolvable upstream
+  commit SHAs so required public CI checks can start reliably.
+
 ## [1.0.9] - 2026-06-13
 
 ### Fixed
