@@ -2,6 +2,13 @@
 
 ## [Unreleased]
 
+
+## [1.0.12] - 2026-06-14
+
+### Changed
+
+- Pin Context7 MCP to latest 3.2.1
+
 ## [1.0.11] - 2026-06-13
 
 ### Changed
