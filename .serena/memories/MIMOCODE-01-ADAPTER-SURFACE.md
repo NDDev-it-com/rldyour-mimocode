@@ -1,7 +1,7 @@
 <!-- Memory Metadata
 Last updated: 2026-06-13
 Last verified: 2026-06-13
-Last commit: 578c126d9af22a7d714859b16b7c49bdf00b7a80 fix(release): empty MiMoCode unreleased changelog section
+Last commit: 54d5627fc8736abaae9018d673163ae29614d7e4 fix(ci): repin required action workflows
 Scope: MiMoCode native adapter surface
 Area: MIMOCODE-->
 
@@ -22,11 +22,11 @@ MiMoCode native adapter surface.
 
 ## Last verified
 - date: 2026-06-13
-- commit: `578c126d9af22a7d714859b16b7c49bdf00b7a80`
+- commit: `54d5627fc8736abaae9018d673163ae29614d7e4`
 - checked by: Codex rldyour-flow sync
 
 ## Facts
-- Adapter version is `1.0.9`.
+- Adapter version is `1.0.10`.
 - Runtime baseline is MiMoCode `0.1.0` with binary `mimo`.
 - Primary runtime install channel is the official Xiaomi MiMo installer pinned
   to `0.1.0`; npm `@mimo-ai/cli@0.1.0` is secondary provenance.
