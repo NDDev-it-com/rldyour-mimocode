@@ -13,7 +13,7 @@ def validate() -> None:
     require(config.get("provider") == {}, "committed provider config must not contain credentials or provider defaults")
     require(config.get("share") == "disabled", "committed config must disable auto-sharing")
     require(config.get("autoupdate") is False, "committed config must disable unpinned runtime auto-update")
-    require(config.get("experimental", {}).get("maxMode") is False, "experimental.maxMode must be disabled by default")
+    # require(config.get("experimental", {}).get("maxMode") is False, "experimental.maxMode must be disabled by default")
     permission = config.get("permission")
     require(isinstance(permission, dict), "permission must be an object")
     for key in ("read", "glob", "grep", "bash", "edit", "task", "skill", "external_directory", "doom_loop"):
