@@ -3,6 +3,12 @@
 ## [Unreleased]
 
 
+## [1.0.13] - 2026-06-14
+
+### Fixed
+
+- Five-adapter wave (codex/opencode/gemini/mimocode): owner autonomous standard (Gemini auto_edit+launcher YOLO, MiMoCode allow-all), ry-repair canonical flags, five-adapter contract matrix, SECURITY parity, MiMoCode runtime proof, unified ASCII public README template; root cmux worker-only, coverage policies, launchers gm/mm, enforcement validators.
+
 ## [1.0.12] - 2026-06-14
 
 ### Changed
