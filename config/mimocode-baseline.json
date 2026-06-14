@@ -4,7 +4,7 @@
   "binary": "mimo",
   "target_runtime_version": "0.1.0",
   "target_channel": "github-release-installer",
-  "verified_on": "2026-06-13",
+  "verified_on": "2026-06-14",
   "source_repository": "https://github.com/XiaomiMiMo/MiMo-Code",
   "upstream_release": "v0.1.0",
   "upstream_release_published_at": "2026-06-10T16:05:43Z",
@@ -26,7 +26,13 @@
     "selected_project_schema": "https://opencode.ai/config.json",
     "selected_schema_reason": "MiMoCode is an OpenCode fork; its project config is OpenCode-config compatible and the OpenCode schema URL resolves. The earlier https://mimo.xiaomi.com//config.json value had a doubled slash and returned HTTP 404. Upstream MiMo-Code also selects the OpenCode schema.",
     "schema_extension_note": "MiMoCode-native keys (for example checkpoint and maxMode) extend the OpenCode schema and may surface as editor schema warnings; runtime config correctness is enforced by scripts/validate_mimocode_config.py, not by the remote schema.",
-    "runtime_schema_validation": "NOT_PROVEN_UNTIL_MIMO_BINARY_AVAILABLE"
+    "jsonc_supported": true,
+    "jsonc_support_note": "MiMoCode reads `.mimocode/mimocode.jsonc` (preferred) or `.mimocode/mimocode.json`; the runtime parses JSONC via jsonc-parser with comments and trailing commas allowed, so the committed `.jsonc` source is runtime-native and needs no `.json` projection.",
+    "runtime_schema_validation": "STATIC_PROVEN_VIA_OPENCODE_SCHEMA_AND_VALIDATOR",
+    "runtime_schema_validation_method": "scripts/validate_mimocode_config.py validates the committed config against the resolvable OpenCode schema (JSON Schema 2020-12, https://opencode.ai/config.json) plus the required MiMoCode-native key set; the permission object uses additionalProperties so native keys pass schema validation.",
+    "runtime_introspection_command": "mimo debug config",
+    "runtime_introspection_is_static_gate": false,
+    "runtime_introspection_note": "MiMoCode exposes no `mimo config validate` or `doctor` subcommand; `mimo debug config` dumps the resolved merged config and requires the installed binary, so it is an optional installed-runtime check, not a static release gate."
   },
   "forbidden_as_stable": [
     "preview dist-tag",
