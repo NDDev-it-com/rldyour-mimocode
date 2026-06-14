@@ -16,43 +16,43 @@
     "glob": "allow",
     "grep": "allow",
     "skill": "allow",
-    "bash": "ask",
-    "edit": "ask",
-    "task": "ask",
-    "external_directory": "ask",
-    "doom_loop": "ask",
-    "webfetch": "ask",
-    "websearch": "ask",
-    "codesearch": "ask",
+    "bash": "allow",
+    "edit": "allow",
+    "task": "allow",
+    "external_directory": "allow",
+    "doom_loop": "allow",
+    "webfetch": "allow",
+    "websearch": "allow",
+    "codesearch": "allow",
     "lsp": "allow",
     "question": "allow"
   },
   "agent": {
     "build": {
       "permission": {
-        "bash": "ask",
-        "edit": "ask",
-        "task": "ask",
+        "bash": "allow",
+        "edit": "allow",
+        "task": "allow",
         "skill": "allow",
-        "external_directory": "ask"
+        "external_directory": "allow"
       }
     },
     "plan": {
       "permission": {
-        "bash": "ask",
+        "bash": "allow",
         "edit": "deny",
-        "task": "ask",
+        "task": "allow",
         "skill": "allow",
-        "external_directory": "ask"
+        "external_directory": "allow"
       }
     },
     "compose": {
       "permission": {
-        "bash": "ask",
-        "edit": "ask",
-        "task": "ask",
+        "bash": "allow",
+        "edit": "allow",
+        "task": "allow",
         "skill": "allow",
-        "external_directory": "ask"
+        "external_directory": "allow"
       }
     }
   },
