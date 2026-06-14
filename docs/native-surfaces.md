@@ -17,14 +17,14 @@ text remains English for stable repo artifacts and validator matching.
 ## Config File Naming
 
 This adapter uses `.mimocode/mimocode.jsonc` for project configuration. JSONC is
-JSON with comments and trailing commas. Upstream MiMo-Code documentation
-sometimes names this file `.mimocode/mimocode.json`, while the upstream
-repository example ships `.mimocode/mimocode.jsonc`. The adapter intentionally
-uses `.jsonc` because comments and trailing commas are part of the
-OpenCode-derived config style and match the upstream repository example. Do not
-rename `.mimocode/mimocode.jsonc` to `.mimocode/mimocode.json` without verifying
-the MiMoCode runtime's accepted file names; the installer materializes runtime
-config according to MiMoCode's accepted names.
+JSON with comments and trailing commas. The MiMoCode runtime resolves project
+config by walking up to the nearest `.mimocode/` directory and reading
+`.mimocode/mimocode.jsonc` first, then `.mimocode/mimocode.json`; both filenames are accepted and
+JSONC is officially supported — the runtime parses it with `jsonc-parser`
+(comments and trailing commas allowed), confirmed in upstream source
+(`packages/opencode/src/config/{paths,config}.ts`) and the upstream repository
+example, which also ships `.mimocode/mimocode.jsonc`. The adapter therefore keeps
+`.jsonc` as the runtime-native source and needs no separate `.json` projection.
 `scripts/validate_mimocode_config_filename_policy.py` enforces this policy.
 
 ## Config Schema Selection
