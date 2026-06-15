@@ -13,10 +13,14 @@ def validate() -> None:
     require(config.get("provider") == {}, "committed provider config must not contain credentials or provider defaults")
     require(config.get("share") == "disabled", "committed config must disable auto-sharing")
     require(config.get("autoupdate") is False, "committed config must disable unpinned runtime auto-update")
-    # require(config.get("experimental", {}).get("maxMode") is False, "experimental.maxMode must be disabled by default")
+    max_mode = config.get("experimental", {}).get("maxMode")
+    require(
+        max_mode is False or (isinstance(max_mode, dict) and isinstance(max_mode.get("candidates"), int)),
+        "experimental.maxMode must be false or an object with integer candidates (best-of-N reasoning)",
+    )
     permission = config.get("permission")
     require(isinstance(permission, dict), "permission must be an object")
-    for key in ("read", "glob", "grep", "bash", "edit", "task", "skill", "external_directory", "doom_loop"):
+    for key in ("read", "glob", "grep", "bash", "edit", "task", "skill", "external_directory", "doom_loop", "list", "todowrite"):
         require(key in permission, f"permission.{key} missing")
     mcp = config.get("mcp")
     require(isinstance(mcp, dict) and mcp, "mcp inventory must be present")

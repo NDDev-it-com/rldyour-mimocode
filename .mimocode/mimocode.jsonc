@@ -25,7 +25,9 @@
     "websearch": "allow",
     "codesearch": "allow",
     "lsp": "allow",
-    "question": "allow"
+    "question": "allow",
+    "list": "allow",
+    "todowrite": "allow"
   },
   "agent": {
     "build": {
