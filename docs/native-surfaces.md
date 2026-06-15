@@ -20,7 +20,7 @@ This adapter uses `.mimocode/mimocode.jsonc` for project configuration. JSONC is
 JSON with comments and trailing commas. The MiMoCode runtime resolves project
 config by walking up to the nearest `.mimocode/` directory and reading
 `.mimocode/mimocode.jsonc` first, then `.mimocode/mimocode.json`; both filenames are accepted and
-JSONC is officially supported — the runtime parses it with `jsonc-parser`
+JSONC is officially supported - the runtime parses it with `jsonc-parser`
 (comments and trailing commas allowed), confirmed in upstream source
 (`packages/opencode/src/config/{paths,config}.ts`) and the upstream repository
 example, which also ships `.mimocode/mimocode.jsonc`. The adapter therefore keeps
