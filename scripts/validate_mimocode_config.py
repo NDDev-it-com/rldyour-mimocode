@@ -18,8 +18,17 @@ def validate() -> None:
         max_mode is False or (isinstance(max_mode, dict) and isinstance(max_mode.get("candidates"), int)),
         "experimental.maxMode must be false or an object with integer candidates (best-of-N reasoning)",
     )
+    checkpoint = config.get("checkpoint")
+    if not isinstance(checkpoint, dict):
+        raise Failure("checkpoint must be an object")
+    reserved = checkpoint.get("reserved")
+    require(
+        isinstance(reserved, int) and not isinstance(reserved, bool) and reserved > 0,
+        "checkpoint.reserved must be a positive integer (reserved checkpoint token budget)",
+    )
     permission = config.get("permission")
-    require(isinstance(permission, dict), "permission must be an object")
+    if not isinstance(permission, dict):
+        raise Failure("permission must be an object")
     for key in ("read", "glob", "grep", "bash", "edit", "task", "skill", "external_directory", "doom_loop", "list", "todowrite"):
         require(key in permission, f"permission.{key} missing")
     mcp = config.get("mcp")
