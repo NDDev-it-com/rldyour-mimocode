@@ -97,7 +97,7 @@ def frontmatter(path: Path) -> dict[str, Any]:
     return fields
 
 
-def require(condition: bool, message: str) -> None:
+def require(condition: object, message: str) -> None:
     if not condition:
         raise Failure(message)
 

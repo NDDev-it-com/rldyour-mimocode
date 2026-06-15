@@ -19,6 +19,13 @@ def test_config_is_valid_jsonc_and_credential_free() -> None:
     assert config["autoupdate"] is False
 
 
+def test_checkpoint_reserved_is_positive_int() -> None:
+    validate_config()
+    config = mimocode_contract.load_jsonc(ROOT / ".mimocode" / "mimocode.jsonc")
+    reserved = config["checkpoint"]["reserved"]
+    assert isinstance(reserved, int) and not isinstance(reserved, bool) and reserved > 0
+
+
 def test_mcp_inventory_contains_required_positive_set() -> None:
     validate_mcp()
     config = mimocode_contract.load_jsonc(ROOT / ".mimocode" / "mimocode.jsonc")
