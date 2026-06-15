@@ -3,6 +3,12 @@
 ## [Unreleased]
 
 
+## [1.5.1] - 2026-06-15
+
+### Changed
+
+- Align SECURITY.md line label, adapter README baseline, and tracked uv.lock self-version to the 1.5.x line for the public governance gate.
+
 ## [1.5.0] - 2026-06-15
 
 ### Changed
