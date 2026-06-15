@@ -3,6 +3,12 @@
 ## [Unreleased]
 
 
+## [1.5.0] - 2026-06-15
+
+### Changed
+
+- Owner-directed unified 1.5.0 release: perfect-sync quality wave (README baseline, ASCII hygiene, agy binary canonicalization, validator coverage).
+
 ## [1.0.13] - 2026-06-14
 
 ### Fixed
