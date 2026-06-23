@@ -112,7 +112,7 @@
       "type": "local",
       "command": [
         "bunx",
-        "chrome-devtools-mcp@1.2.0",
+        "chrome-devtools-mcp@1.4.0",
         "--headless",
         "--isolated",
         "--no-usage-statistics",
@@ -157,7 +157,7 @@
       "type": "local",
       "command": [
         "bunx",
-        "@upstash/context7-mcp@3.2.1"
+        "@upstash/context7-mcp@3.2.2"
       ],
       "enabled": true,
       "environment": {
