@@ -13,7 +13,7 @@ rldyour AI CLI configuration for MiMoCode: native .mimocode config, build/plan/c
 | Surface | Value |
 | --- | --- |
 | Adapter version | `1.6.0` |
-| Runtime baseline | MiMoCode `0.1.0` |
+| Runtime baseline | MiMoCode `0.1.3` |
 | GitHub release tag | `1.6.0` |
 
 ## What This Repository Provides
@@ -57,14 +57,14 @@ and must not be described as hidden daemon orchestration.
 Install the MiMoCode runtime with a version pin:
 
 ```bash
-curl -fsSL https://mimo.xiaomi.com/install | bash -s -- --version 0.1.0 --no-modify-path
+curl -fsSL https://mimo.xiaomi.com/install | bash -s -- --version 0.1.3 --no-modify-path
 ```
 
 The binary installs to `$HOME/.mimocode/bin/mimo`. As a secondary channel,
 after registry provenance validation:
 
 ```bash
-npm install -g @mimo-ai/cli@0.1.0
+npm install -g @mimo-ai/cli@0.1.3
 ```
 
 Materialize rldyour system config and verify the runtime:

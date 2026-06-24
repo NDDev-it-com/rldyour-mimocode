@@ -37,5 +37,5 @@ def test_runtime_baseline_is_initial_mimocode_target() -> None:
     validate_runtime()
     baseline = json.loads((ROOT / "config" / "mimocode-baseline.json").read_text())
     assert baseline["runtime"] == "mimocode"
-    assert baseline["upstream_release"] == "v0.1.0"
+    assert baseline["upstream_release"] == "v0.1.3"
     assert baseline["npm"]["package"] == "@mimo-ai/cli"

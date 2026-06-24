@@ -34,8 +34,8 @@ version="$(mimo --version 2>&1 || true)"
 if [[ "$redact" == "true" ]]; then
   version="$(printf '%s' "$version" | sed -E 's/(token|key|secret|password)=([^[:space:]]+)/\\1=REDACTED/Ig')"
 fi
-if [[ "$version" == *"0.1.0"* ]]; then
+if [[ "$version" == *"0.1.3"* ]]; then
   printf '{"status":"OK","runtime":"mimocode","binary":"mimo","version":%s}\n' "$(python3 -c 'import json,sys; print(json.dumps(sys.stdin.read()))' <<<"$version")"
 else
-  printf '{"status":"NOT_PROVEN","runtime":"mimocode","binary":"mimo","reason":"version output does not contain 0.1.0","version":%s}\n' "$(python3 -c 'import json,sys; print(json.dumps(sys.stdin.read()))' <<<"$version")"
+  printf '{"status":"NOT_PROVEN","runtime":"mimocode","binary":"mimo","reason":"version output does not contain 0.1.3","version":%s}\n' "$(python3 -c 'import json,sys; print(json.dumps(sys.stdin.read()))' <<<"$version")"
 fi
