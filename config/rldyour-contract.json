@@ -3,7 +3,7 @@
   "adapter": {
     "id": "mimocode",
     "name": "rldyour-mimocode",
-    "version": "1.5.1",
+    "version": "1.6.0",
     "runtime": "mimocode",
     "runtime_binary": "mimo",
     "runtime_package": "@mimo-ai/cli",
