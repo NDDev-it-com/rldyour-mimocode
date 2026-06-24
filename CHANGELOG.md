@@ -3,6 +3,12 @@
 ## [Unreleased]
 
 
+## [1.6.0] - 2026-06-24
+
+### Changed
+
+- cmux worker v3 projections and latest MCP runtime pins (chrome-devtools-mcp 1.4.0, context7 3.2.2)
+
 ## [1.5.1] - 2026-06-15
 
 ### Changed
