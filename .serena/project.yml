@@ -1,0 +1,5 @@
+project_name: rldyour-mimocode
+language: python
+default_branch: main
+agent_only: true
+memory_policy: fact-only
