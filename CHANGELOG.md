@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.7.4] - 2026-06-26
+
+### Fixed
+
+- Publish a clean follow-up release with a valid Conventional Commit head subject after the 1.7.3 release commit subject included literal quotes.
+
 ## [1.7.3] - 2026-06-26
 
 ### Fixed
