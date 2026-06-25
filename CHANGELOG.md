@@ -3,6 +3,14 @@
 ## [Unreleased]
 
 
+## [1.7.0] - 2026-06-25
+
+### Changed
+
+- Remove fullrepo-boundary from MiMoCode configuration: agent context (.serena/project.yml and .serena/memories) is tracked on `main`; remove fullrepo branch machinery and branch-protection settings.
+- `scripts/validate_mimocode_security_boundary.py` and runtime docs now state durable context policy directly on main branch.
+- Remove managed fullrepo publish lifecycle (`publish_fullrepo`, bootstrap, and restore steps) from MiMoCode sync scripts and instructions.
+
 ## [1.6.1] - 2026-06-25
 
 ### Changed

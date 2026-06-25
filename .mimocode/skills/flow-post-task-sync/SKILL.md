@@ -11,7 +11,8 @@ Finish work by verifying:
 - Targeted adapter validators.
 - Root control-plane validators when root pins/contracts changed.
 - Serena memories and MiMoCode `MEMORY.md` if durable facts changed.
-- Fullrepo publish when agent-only context changed.
 
-Workers must not push, publish fullrepo, or perform final sync unless that exact
-action was explicitly delegated by the visible orchestrator/owner.
+`main` carries durable agent context, so there is no separate publish step.
+
+Workers must not push, tag, delete branches, or perform final sync unless that
+exact action was explicitly delegated by the visible orchestrator/owner.

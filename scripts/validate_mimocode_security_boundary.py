@@ -8,9 +8,8 @@ from mimocode_contract import ROOT, Failure, require
 
 SECURITY = ROOT / "SECURITY.md"
 
-# Source-tracked security-facing surfaces. Agent-only/fullrepo files (for example
-# .serena/memories/*) are intentionally excluded because they may be absent in a
-# source-only CI checkout; present optional files are still scanned.
+# Source-tracked security-facing surfaces. Session artifacts and runtime state are
+# intentionally excluded because they may be absent in a source-only CI checkout.
 SCAN_FILES = (
     ROOT / "SECURITY.md",
     ROOT / "README.md",
