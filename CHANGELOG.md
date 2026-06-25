@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.7.3] - 2026-06-26
+
+### Fixed
+
+- State that the `1.7.x` support label tracks only the latest released patch in the security policy.
+
 ## [1.7.2] - 2026-06-26
 
 ### Fixed
