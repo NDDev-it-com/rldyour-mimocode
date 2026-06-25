@@ -1,7 +1,7 @@
 <!-- Memory Metadata
-Last updated: 2026-06-25
-Last verified: 2026-06-25
-Last commit: 6ecb87450652175d25efc42128884b7fa2b2fc2f chore(release): mimocode 1.7.0
+Last updated: 2026-06-26
+Last verified: 2026-06-26
+Last commit: c219a9beb8743a44add8d961733b2fac2d6a69ea chore(release): prepare mimocode 1.7.0 (no-fullrepo)
 Scope: MiMoCode native adapter surface
 Area: MIMOCODE-->
 
@@ -21,9 +21,9 @@ MiMoCode native adapter surface.
 - `path:.mimocode/skills/`
 
 ## Last verified
-- date: 2026-06-25
-- commit: `6ecb87450652175d25efc42128884b7fa2b2fc2f`
-- checked by: flow-memory-sync after unified 1.7.0 release sync
+- date: 2026-06-26
+- commit: `c219a9beb8743a44add8d961733b2fac2d6a69ea`
+- checked by: ry-start no-fullrepo MiMoCode migration
 
 ## Facts
 - Adapter version is `1.7.0`.
