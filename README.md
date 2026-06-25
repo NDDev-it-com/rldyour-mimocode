@@ -12,9 +12,9 @@ rldyour AI CLI configuration for MiMoCode: native .mimocode config, build/plan/c
 
 | Surface | Value |
 | --- | --- |
-| Adapter version | `1.7.1` |
+| Adapter version | `1.7.2` |
 | Runtime baseline | MiMoCode `0.1.3` |
-| GitHub release tag | `1.7.1` |
+| GitHub release tag | `1.7.2` |
 
 ## What This Repository Provides
 
@@ -126,7 +126,7 @@ plane:
 MiMoCode built-in or future browser features are disabled as release providers
 until a separate provider model, policy, and validator are added.
 
-## Memory Model
+## Repository Context / Serena Memory
 
 Serena memories are the cross-tool source-of-truth project memory for release
 facts, contracts, invariants, entry points, and validation commands.
