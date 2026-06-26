@@ -1,7 +1,7 @@
 <!-- Memory Metadata
-Last updated: 2026-06-26
-Last verified: 2026-06-26
-Last commit: c219a9beb8743a44add8d961733b2fac2d6a69ea chore(release): prepare mimocode 1.7.7 (no-fullrepo)
+Last updated: 2026-06-27
+Last verified: 2026-06-27
+Last commit: e48c99acf0fec17651beb3ecc89103370d2d9b99 chore(release): rldyour-mimocode 1.7.8
 Scope: MiMoCode release validation
 Area: RELEASE-->
 
@@ -21,12 +21,12 @@ MiMoCode release validation.
 - `path:scripts/doctor_system_mimocode.sh`
 
 ## Last verified
-- date: 2026-06-26
-- commit: `c219a9beb8743a44add8d961733b2fac2d6a69ea`
+- date: 2026-06-27
+- commit: `e48c99acf0fec17651beb3ecc89103370d2d9b99`
 - checked by: Codex rldyour-flow sync
 
 ## Facts
-- Current adapter release is `1.7.7`.
+- Current adapter release is `1.7.9`.
 - Initial adapter release was `1.0.0`.
 - Runtime baseline is MiMoCode `0.1.3`.
 - Public CI must use GitHub-hosted runners and SHA-pinned actions.
