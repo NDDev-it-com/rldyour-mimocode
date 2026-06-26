@@ -1,6 +1,6 @@
 # rldyour-mimocode Runtime Memory Projection
 
-Last commit: c219a9beb8743a44add8d961733b2fac2d6a69ea chore(release): prepare mimocode 1.7.6 (no-fullrepo)
+Last commit: c219a9beb8743a44add8d961733b2fac2d6a69ea chore(release): prepare mimocode 1.7.7 (no-fullrepo)
 
 This file is the MiMoCode-native project memory projection for the
 `rldyour-mimocode` adapter.
@@ -8,7 +8,7 @@ This file is the MiMoCode-native project memory projection for the
 Current facts:
 
 1. Adapter id: `mimocode`.
-2. Adapter version: `1.7.6`.
+2. Adapter version: `1.7.7`.
 3. Runtime baseline: MiMoCode `0.1.3`.
 4. Runtime binary: `mimo`.
 5. Upstream source: `https://github.com/XiaomiMiMo/MiMo-Code`.

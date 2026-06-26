@@ -1,7 +1,7 @@
 <!-- Memory Metadata
 Last updated: 2026-06-26
 Last verified: 2026-06-26
-Last commit: c219a9beb8743a44add8d961733b2fac2d6a69ea chore(release): prepare mimocode 1.7.6 (no-fullrepo)
+Last commit: c219a9beb8743a44add8d961733b2fac2d6a69ea chore(release): prepare mimocode 1.7.7 (no-fullrepo)
 Scope: MiMoCode adapter memory index
 Area: CORE-->
 
@@ -28,7 +28,7 @@ MiMoCode adapter memory index.
 
 ## Facts
 - `rldyour-mimocode` is the MiMoCode-native adapter repository.
-- The current adapter release is `1.7.6`.
+- The current adapter release is `1.7.7`.
 - The runtime baseline is MiMoCode `0.1.3` with binary `mimo`.
 - The adapter owns `.mimocode` config, agent, command, skill, MCP, browser,
   cmux-worker, and runtime memory projection surfaces.

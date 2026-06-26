@@ -12,9 +12,9 @@ rldyour AI CLI configuration for MiMoCode: native .mimocode config, build/plan/c
 
 | Surface | Value |
 | --- | --- |
-| Adapter version | `1.7.6` |
+| Adapter version | `1.7.7` |
 | Runtime baseline | MiMoCode `0.1.3` |
-| GitHub release tag | `1.7.6` |
+| GitHub release tag | `1.7.7` |
 
 ## What This Repository Provides
 
@@ -100,7 +100,7 @@ a missing runtime as success. For full `ry-repair` convergence, see
 | serena | local | `serena-agent==1.5.3` via `uvx` |
 | chrome-devtools | local | `chrome-devtools-mcp@1.4.0` via `bunx` |
 | sequential-thinking | local | `@modelcontextprotocol/server-sequential-thinking@2025.12.18` via `bunx` |
-| shadcn | local | `shadcn@4.11.1` via `bunx` |
+| shadcn | local | `shadcn@4.12.0` via `bunx` |
 | dart-flutter | local | `dart mcp-server` |
 | context7 | local | `@upstash/context7-mcp@3.2.2` via `bunx` |
 | github | remote | `https://api.githubcopilot.com/mcp/` |
