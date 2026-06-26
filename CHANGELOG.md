@@ -45,6 +45,12 @@
 ## [Unreleased]
 
 
+## [1.7.9] - 2026-06-27
+
+### Fixed
+
+- Refresh MiMoCode Serena release memory.
+
 ## [1.7.8] - 2026-06-27
 
 ### Fixed
