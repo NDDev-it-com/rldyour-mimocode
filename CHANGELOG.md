@@ -45,6 +45,12 @@
 ## [Unreleased]
 
 
+## [1.7.8] - 2026-06-27
+
+### Fixed
+
+- Refresh setup-python action pin.
+
 ## [1.7.0] - 2026-06-26
 
 ### Changed
