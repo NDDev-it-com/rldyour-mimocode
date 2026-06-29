@@ -4,8 +4,7 @@ from __future__ import annotations
 import argparse
 import sys
 
-from mimocode_contract import BASELINE, CONTRACT, Failure, load_json, require
-from mimocode_contract import ROOT
+from mimocode_contract import BASELINE, CONTRACT, ROOT, Failure, load_json, require
 
 
 def validate() -> None:

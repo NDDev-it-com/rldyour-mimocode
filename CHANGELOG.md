@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.7.10] - 2026-06-29
+
+### Fixed
+
+- Harden Ruff and Pyright baseline across adapter configs.
+
 ## [1.7.7] - 2026-06-27
 
 ### Changed
@@ -43,7 +49,6 @@
 - Sync generated cmux worker/orchestrator skill projections with the tracked-context branch model.
 
 ## [Unreleased]
-
 
 ## [1.7.9] - 2026-06-27
 

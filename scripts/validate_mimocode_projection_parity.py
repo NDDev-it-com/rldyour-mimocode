@@ -4,7 +4,16 @@ from __future__ import annotations
 import argparse
 import sys
 
-from mimocode_contract import CONFIG, CONTRACT, PROJECTION_POLICY, ROOT, Failure, load_json, load_jsonc, require
+from mimocode_contract import (
+    CONFIG,
+    CONTRACT,
+    PROJECTION_POLICY,
+    ROOT,
+    Failure,
+    load_json,
+    load_jsonc,
+    require,
+)
 
 
 def validate() -> None:
