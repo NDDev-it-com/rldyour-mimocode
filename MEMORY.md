@@ -1,6 +1,6 @@
 # rldyour-mimocode Runtime Memory Projection
 
-Last commit: c219a9beb8743a44add8d961733b2fac2d6a69ea chore(release): prepare mimocode 1.7.13 (no-fullrepo)
+Last commit: c219a9beb8743a44add8d961733b2fac2d6a69ea chore(release): prepare mimocode 1.7.14 (no-fullrepo)
 
 This file is the MiMoCode-native project memory projection for the
 `rldyour-mimocode` adapter.
@@ -8,12 +8,12 @@ This file is the MiMoCode-native project memory projection for the
 Current facts:
 
 1. Adapter id: `mimocode`.
-2. Adapter version: `1.7.13`.
-3. Runtime baseline: MiMoCode `0.1.3`.
+2. Adapter version: `1.7.14`.
+3. Runtime baseline: MiMoCode `0.1.4`.
 4. Runtime binary: `mimo`.
 5. Upstream source: `https://github.com/XiaomiMiMo/MiMo-Code`.
 6. Primary install channel: official Xiaomi MiMo installer / GitHub release
-   assets pinned to `v0.1.3`.
+   assets pinned to `v0.1.4`.
 7. This repository is AGPL-3.0-or-later and does not vendor upstream MiMoCode
    source, binaries, logos, QR codes, or trademarks.
 8. MiMoCode compose, subagents, `/goal`, `/dream`, `/distill`, and background

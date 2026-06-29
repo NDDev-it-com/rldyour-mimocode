@@ -8,7 +8,7 @@ Usage: scripts/install_system_mimocode.sh [--plan|--apply] [--mimocode-home PATH
 Materializes rldyour-mimocode into the local MiMoCode global config directory.
 This does not install the MiMoCode runtime binary. Install runtime separately:
 
-  curl -fsSL https://mimo.xiaomi.com/install | bash -s -- --version 0.1.3 --no-modify-path
+  curl -fsSL https://mimo.xiaomi.com/install | bash -s -- --version 0.1.4 --no-modify-path
 USAGE
 }
 

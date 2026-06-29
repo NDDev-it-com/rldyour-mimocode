@@ -51,6 +51,12 @@
 ## [Unreleased]
 
 
+## [1.7.14] - 2026-06-29
+
+### Changed
+
+- Refresh MiMoCode runtime baseline to 0.1.4.
+
 ## [1.7.13] - 2026-06-29
 
 ### Fixed
