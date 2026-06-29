@@ -27,9 +27,9 @@ MiMoCode native adapter surface.
 
 ## Facts
 - Adapter version is `1.7.7`.
-- Runtime baseline is MiMoCode `0.1.3` with binary `mimo`.
+- Runtime baseline is MiMoCode `0.1.4` with binary `mimo`.
 - Primary runtime install channel is the official Xiaomi MiMo installer pinned
-  to `0.1.3`; npm `@mimo-ai/cli@0.1.3` is secondary provenance.
+  to `0.1.4`; npm `@mimo-ai/cli@0.1.4` is secondary provenance.
 - Native config surfaces are `.mimocode/mimocode.jsonc`, `.mimocode/tui.json`,
   `.mimocode/agent/*.md`, `.mimocode/command/*.md`, and
   `.mimocode/skills/*/SKILL.md`.

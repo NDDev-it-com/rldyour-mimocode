@@ -5,7 +5,7 @@ Runtime install is intentionally separate from adapter config materialization.
 Install the MiMoCode runtime with a version pin:
 
 ```bash
-curl -fsSL https://mimo.xiaomi.com/install | bash -s -- --version 0.1.3 --no-modify-path
+curl -fsSL https://mimo.xiaomi.com/install | bash -s -- --version 0.1.4 --no-modify-path
 ```
 
 Then materialize rldyour system config:

@@ -2,22 +2,22 @@
   "schema_version": 1,
   "runtime": "mimocode",
   "binary": "mimo",
-  "target_runtime_version": "0.1.3",
+  "target_runtime_version": "0.1.4",
   "target_channel": "github-release-installer",
-  "verified_on": "2026-06-25",
+  "verified_on": "2026-06-29",
   "source_repository": "https://github.com/XiaomiMiMo/MiMo-Code",
-  "upstream_release": "v0.1.3",
-  "upstream_release_published_at": "2026-06-24T14:42:04Z",
+  "upstream_release": "v0.1.4",
+  "upstream_release_published_at": "2026-06-29T13:22:57Z",
   "install": {
-    "primary_command": "curl -fsSL https://mimo.xiaomi.com/install | bash -s -- --version 0.1.3 --no-modify-path",
+    "primary_command": "curl -fsSL https://mimo.xiaomi.com/install | bash -s -- --version 0.1.4 --no-modify-path",
     "default_binary_path": "$HOME/.mimocode/bin/mimo",
     "official_install_docs": "https://mimo.xiaomi.com/mimocode/install",
-    "github_release_api": "https://api.github.com/repos/XiaomiMiMo/MiMo-Code/releases/tags/v0.1.3"
+    "github_release_api": "https://api.github.com/repos/XiaomiMiMo/MiMo-Code/releases/tags/v0.1.4"
   },
   "npm": {
     "package": "@mimo-ai/cli",
-    "version": "0.1.3",
-    "registry_provenance": "PROVEN_BY_NPM_VIEW_2026-06-25",
+    "version": "0.1.4",
+    "registry_provenance": "PROVEN_BY_NPM_VIEW_2026-06-29",
     "release_policy": "secondary channel only until root live validator keeps it green"
   },
   "config_schema": {

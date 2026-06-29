@@ -23,11 +23,11 @@ MiMoCode runtime baseline and install proof.
 - checked by: ry-start no-fullrepo MiMoCode migration
 
 ## Facts
-- Runtime baseline is MiMoCode `0.1.3`.
+- Runtime baseline is MiMoCode `0.1.4`.
 - Runtime binary is `mimo`.
 - Primary install channel is the official Xiaomi MiMo installer pinned to
-  `0.1.3` with `--no-modify-path`.
-- npm `@mimo-ai/cli@0.1.3` is secondary provenance and must not replace the
+  `0.1.4` with `--no-modify-path`.
+- npm `@mimo-ai/cli@0.1.4` is secondary provenance and must not replace the
   primary installer channel without explicit validation.
 - The runtime doctor must report `NOT_PROVEN` when `mimo` is unavailable.
 
