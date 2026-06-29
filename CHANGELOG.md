@@ -51,6 +51,12 @@
 ## [Unreleased]
 
 
+## [1.7.13] - 2026-06-29
+
+### Fixed
+
+- Install pytest dependencies in required CI validation workflows.
+
 ## [1.7.12] - 2026-06-29
 
 ### Fixed
