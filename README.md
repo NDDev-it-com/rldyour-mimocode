@@ -12,9 +12,9 @@ rldyour AI CLI configuration for MiMoCode: native .mimocode config, build/plan/c
 
 | Surface | Value |
 | --- | --- |
-| Adapter version | `1.7.12` |
+| Adapter version | `1.7.13` |
 | Runtime baseline | MiMoCode `0.1.3` |
-| GitHub release tag | `1.7.12` |
+| GitHub release tag | `1.7.13` |
 
 ## What This Repository Provides
 
