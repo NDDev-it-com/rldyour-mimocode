@@ -32,6 +32,8 @@ jobs:
         uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
         with:
           python-version: "3.13"
+      - name: Install validation dependencies
+        run: python3 -m pip install --user pytest
       - name: Resolve release version
         env:
           INPUT_VERSION: ${{ inputs.version }}
@@ -71,8 +73,9 @@ jobs:
           set -euo pipefail
           mkdir -p dist
           git archive --format=zip --prefix=rldyour-mimocode/ -o dist/rldyour-mimocode-source.zip HEAD
-          sha256sum dist/rldyour-mimocode-source.zip > dist/SHA256SUMS
-          printf '{"name":"rldyour-mimocode","version":"%s","sbom":"source-only"}\n' "$(cat VERSION)" > dist/sbom.spdx.json
+          python3 scripts/release_sbom.py --output dist/sbom.spdx.json
+          sha256sum dist/rldyour-mimocode-source.zip dist/sbom.spdx.json > dist/SHA256SUMS
+          python3 scripts/validate_release_assets.py dist
       - name: Attest source archive
         uses: actions/attest@59d89421af93a897026c735860bf21b6eb4f7b26 # v4.1.0
         with:
