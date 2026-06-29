@@ -26,7 +26,7 @@ MiMoCode release validation.
 - checked by: Codex rldyour-flow sync
 
 ## Facts
-- Current adapter release is `1.7.9`.
+- Current adapter release is `1.7.10`.
 - Initial adapter release was `1.0.0`.
 - Runtime baseline is MiMoCode `0.1.3`.
 - Public CI must use GitHub-hosted runners and SHA-pinned actions.
