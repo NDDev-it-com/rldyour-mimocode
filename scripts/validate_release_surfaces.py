@@ -4,10 +4,8 @@ from __future__ import annotations
 import argparse
 import re
 import sys
-from pathlib import Path
 
 from mimocode_contract import CONTRACT, ROOT, Failure, load_json, require
-
 
 VERSION_RE = re.compile(r"^\d+\.\d+\.\d+$")
 

@@ -4,7 +4,7 @@ from __future__ import annotations
 import argparse
 import sys
 
-from mimocode_contract import PROJECTION_POLICY, ROOT, Failure, frontmatter, load_json, require, rel
+from mimocode_contract import PROJECTION_POLICY, ROOT, Failure, frontmatter, load_json, rel, require
 
 
 def validate() -> None:
