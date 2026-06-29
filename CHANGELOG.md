@@ -50,6 +50,19 @@
 
 ## [Unreleased]
 
+
+## [1.7.12] - 2026-06-29
+
+### Fixed
+
+- Enforce five-adapter validation parity and structured release evidence
+
+## [1.7.11] - 2026-06-29
+
+### Fixed
+
+- Enforce five-adapter validation parity and structured release evidence
+
 ## [1.7.9] - 2026-06-27
 
 ### Fixed
