@@ -1,7 +1,7 @@
 <!-- Memory Metadata
 Last updated: 2026-06-27
 Last verified: 2026-06-27
-Last commit: e48c99acf0fec17651beb3ecc89103370d2d9b99 chore(release): rldyour-mimocode 1.7.8
+Last commit: 4a865c42322c0fe28033d0b9c2e36786f183f889 chore(release): mimocode 1.7.15 (other)
 Scope: MiMoCode release validation
 Area: RELEASE-->
 
@@ -26,7 +26,7 @@ MiMoCode release validation.
 - checked by: Codex rldyour-flow sync
 
 ## Facts
-- Current adapter release is `1.7.14`.
+- Current adapter release is `1.7.15`.
 - Initial adapter release was `1.0.0`.
 - Runtime baseline is MiMoCode `0.1.4`.
 - Public CI must use GitHub-hosted runners and SHA-pinned actions.
