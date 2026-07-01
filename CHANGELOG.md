@@ -51,6 +51,13 @@
 ## [Unreleased]
 
 
+## [1.7.15] - 2026-07-01
+
+### Changed
+
+- Refresh Codex CLI 0.142.5 and Playwright CLI 0.1.15 adapter baselines.
+- Align Playwright CLI browser provider pin to 0.1.15.
+
 ## [1.7.14] - 2026-06-29
 
 ### Changed
