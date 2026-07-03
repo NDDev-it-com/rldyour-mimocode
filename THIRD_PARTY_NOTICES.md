@@ -1,6 +1,6 @@
 # Third-Party Notices
 
-This notice applies to `rldyour-mimocode` adapter release `1.7.16`.
+This notice applies to `rldyour-mimocode` adapter release `1.7.17`.
 
 ## XiaomiMiMo/MiMo-Code
 
