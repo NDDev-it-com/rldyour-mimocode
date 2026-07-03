@@ -21,7 +21,7 @@ release readiness, versioning, and artifact hygiene
 - checked by: Codex ry-start memory taxonomy sync
 
 ## Facts
-- Current adapter release is `1.7.16`.
+- Current adapter release is `1.7.17`.
 - Initial adapter release was `1.0.0`.
 - Runtime baseline is MiMoCode `0.1.4`.
 - Public CI must use GitHub-hosted runners and SHA-pinned actions.
