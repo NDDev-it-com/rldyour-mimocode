@@ -51,6 +51,12 @@
 ## [Unreleased]
 
 
+## [1.7.16] - 2026-07-03
+
+### Fixed
+
+- Refresh runtime and dependency baselines.
+
 ## [1.7.15] - 2026-07-01
 
 ### Changed
