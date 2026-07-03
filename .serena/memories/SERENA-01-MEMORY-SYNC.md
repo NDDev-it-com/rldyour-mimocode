@@ -1,25 +1,23 @@
 <!-- Memory Metadata
-Last updated: 2026-06-26
-Last verified: 2026-06-26
+Last updated: 2026-05-22
 Last commit: c219a9beb8743a44add8d961733b2fac2d6a69ea chore(release): prepare mimocode 1.7.7 (no-fullrepo)
-Scope: MiMoCode Serena memory maintenance
-Area: SERENA-->
+Scope: Serena memory, fullrepo, and knowledge sync policy
+Area: SERENA
+-->
 
 # SERENA-01-MEMORY-SYNC
 
 ## Scope
-MiMoCode Serena memory maintenance.
+Serena memory, fullrepo, and knowledge sync policy
 
 ## Current source of truth
 - `path:.serena/project.yml`
-- `path:.serena/memories/`
-- `path:config/memory-boundary-policy.json`
-- `path:scripts/validate_mimocode_memory_boundary.py`
+- `path:README.md`
 
 ## Last verified
-- date: 2026-06-26
+- date: 2026-05-22
 - commit: `c219a9beb8743a44add8d961733b2fac2d6a69ea`
-- checked by: Codex rldyour-flow sync
+- checked by: Codex ry-start memory taxonomy sync
 
 ## Facts
 - MiMoCode adapter Serena memories use the same strict template and
@@ -30,53 +28,15 @@ MiMoCode Serena memory maintenance.
   runtime projection.
 
 ## Evidence
+- `commit:c219a9beb8743a44add8d961733b2fac2d6a69ea`
 - `path:.serena/project.yml`
-- `path:.serena/memories/CORE-01-INDEX.md`
-- `path:.serena/memories/MEMORY-01-MIMOCODE-SERENA-BOUNDARY.md`
-- `path:scripts/validate_mimocode_memory_boundary.py`
+- `path:README.md`
 
 ## Known pitfalls
-- Do not allow MiMoCode `/dream` or `/distill` output to silently mutate Serena
-  memories.
+- Treat this memory as derived context. Current code, configuration, runtime output, and GitHub state override stale memory text.
 
 ## Update policy
-Update after required memory domains, Serena project config, memory boundary, or
-MiMoCode memory projection changes.
+Update after verified changes to the referenced source-of-truth files.
 
 ## Delete / merge policy
-- Delete or merge only when Serena memory maintenance moves to another durable
-  memory and the replacement preserves current facts.
-
-## Applies to
-- `.serena/project.yml`
-- `.serena/memories/`
-- `MEMORY.md`
-
-## Source of truth
-- The `Current source of truth` section above, plus root memory schema and
-  memory evidence validators.
-
-## Invariants
-- Serena memories must remain fact-only and source-backed.
-- MiMoCode runtime memory must not overwrite Serena memories.
-- Code, configuration, tests, validators, git state, and live GitHub state
-  override this memory when they disagree.
-
-## Current State
-- See `Facts` for current durable facts.
-
-## Do Not Infer
-- Do not infer current release facts from generated or runtime MiMoCode memory
-  unless source files and validators confirm them.
-
-## Update Triggers
-- Update after memory taxonomy, memory boundary, Serena project, or adapter
-  release facts change.
-
-## Validation Commands
-- `python3 scripts/validate_mimocode_memory_boundary.py --strict`
-- `python3 scripts/validate_fast.sh`
-
-## Repair Procedure
-- Re-read memory policy and current memory files, update only verified facts,
-  then rerun the validation commands.
+- Delete or merge only when the referenced source-of-truth files no longer support this memory and the replacement memory preserves the durable facts.

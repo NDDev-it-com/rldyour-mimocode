@@ -1,24 +1,22 @@
 <!-- Memory Metadata
-Last updated: 2026-06-26
-Last verified: 2026-06-26
+Last updated: 2026-05-22
 Last commit: c219a9beb8743a44add8d961733b2fac2d6a69ea chore(release): prepare mimocode 1.7.7 (no-fullrepo)
-Scope: MiMoCode MCP inventory
-Area: MCP-->
+Scope: MCP runtime transport and pin policy
+Area: MCP
+-->
 
 # MCP-01-INVENTORY
 
 ## Scope
-MiMoCode MCP inventory.
+MCP runtime transport and pin policy
 
 ## Current source of truth
-- `path:config/mcp-inventory.json`
-- `path:.mimocode/mimocode.jsonc`
-- `path:scripts/validate_mimocode_mcp_inventory.py`
+- `path:README.md`
 
 ## Last verified
-- date: 2026-06-26
+- date: 2026-05-22
 - commit: `c219a9beb8743a44add8d961733b2fac2d6a69ea`
-- checked by: Codex rldyour-flow sync
+- checked by: Codex ry-start memory taxonomy sync
 
 ## Facts
 - MiMoCode projects only the approved active MCP inventory from root policy.
@@ -28,48 +26,14 @@ MiMoCode MCP inventory.
 - Removed or historical MCP tools are not active inventory.
 
 ## Evidence
-- `path:config/mcp-inventory.json`
-- `path:.mimocode/mimocode.jsonc`
-- `path:scripts/validate_mimocode_mcp_inventory.py`
+- `commit:c219a9beb8743a44add8d961733b2fac2d6a69ea`
+- `path:README.md`
 
 ## Known pitfalls
-- OpenCode-derived MCP compatibility does not waive MiMoCode inventory
-  validation.
+- Treat this memory as derived context. Current code, configuration, runtime output, and GitHub state override stale memory text.
 
 ## Update policy
-Update after MCP inventory, aliases, transport, env policy, or runtime config
-format changes.
+Update after verified changes to the referenced source-of-truth files.
 
 ## Delete / merge policy
-- Delete or merge only when MCP inventory tracking moves to another durable
-  memory and the replacement preserves current facts.
-
-## Applies to
-- `.mimocode/mimocode.jsonc`
-- `config/mcp-inventory.json`
-
-## Source of truth
-- The `Current source of truth` section above, plus root MCP inventory policy.
-
-## Invariants
-- Use positive active inventories, not tool-specific tombstone validators.
-- Code, configuration, tests, validators, git state, and live GitHub state
-  override this memory when they disagree.
-
-## Current State
-- See `Facts` for current durable facts.
-
-## Do Not Infer
-- Do not infer approval for extra MCP servers from runtime support alone.
-
-## Update Triggers
-- Update after approved active MCP inventory changes, alias changes, transport
-  changes, or root parity policy changes.
-
-## Validation Commands
-- `python3 scripts/validate_mimocode_mcp_inventory.py --strict`
-- `python3 scripts/validate_fast.sh`
-
-## Repair Procedure
-- Re-read MCP policy and `.mimocode/mimocode.jsonc`, update only verified
-  facts, then rerun the validation commands.
+- Delete or merge only when the referenced source-of-truth files no longer support this memory and the replacement memory preserves the durable facts.

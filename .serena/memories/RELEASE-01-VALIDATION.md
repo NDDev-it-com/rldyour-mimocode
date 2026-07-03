@@ -1,29 +1,24 @@
 <!-- Memory Metadata
-Last updated: 2026-07-03
-Last verified: 2026-07-03
+Last updated: 2026-05-22
 Last commit: e239f9df6caa67bb408f763b478ea1f2ce49e9f3 chore(release): mimocode 1.7.16 (other)
-Scope: MiMoCode release validation
-Area: RELEASE-->
+Scope: release readiness, versioning, and artifact hygiene
+Area: RELEASE
+-->
 
 # RELEASE-01-VALIDATION
 
 ## Scope
-MiMoCode release validation.
+release readiness, versioning, and artifact hygiene
 
 ## Current source of truth
 - `path:VERSION`
 - `path:CHANGELOG.md`
-- `path:SECURITY.md`
-- `path:.github/branch-protection/main.json`
-- `path:.github/workflows/validate.yml`
-- `path:.github/workflows/secret-scan.yml`
-- `path:scripts/validate_fast.sh`
-- `path:scripts/doctor_system_mimocode.sh`
+- `path:.github/workflows/release.yml`
 
 ## Last verified
-- date: 2026-07-03
+- date: 2026-05-22
 - commit: `e239f9df6caa67bb408f763b478ea1f2ce49e9f3`
-- checked by: Codex rldyour-flow sync and tracked memory refresh
+- checked by: Codex ry-start memory taxonomy sync
 
 ## Facts
 - Current adapter release is `1.7.16`.
@@ -35,61 +30,16 @@ MiMoCode release validation.
 - Runtime doctor reports `NOT_PROVEN` when `mimo` is unavailable.
 
 ## Evidence
+- `commit:e239f9df6caa67bb408f763b478ea1f2ce49e9f3`
 - `path:VERSION`
 - `path:CHANGELOG.md`
-- `path:SECURITY.md`
-- `path:.github/branch-protection/main.json`
-- `path:.github/workflows/validate.yml`
-- `path:.github/workflows/secret-scan.yml`
-- `path:scripts/validate_fast.sh`
-- `path:scripts/doctor_system_mimocode.sh`
+- `path:.github/workflows/release.yml`
 
 ## Known pitfalls
-- A `VERSION` file is not enough for release certification. GitHub Release,
-  local validators, pytest, and clean artifact hygiene are all required.
+- Treat this memory as derived context. Current code, configuration, runtime output, and GitHub state override stale memory text.
 
 ## Update policy
-Update after release version changes, CI policy changes, branch protection
-changes, release workflow changes, or runtime doctor contract changes.
+Update after verified changes to the referenced source-of-truth files.
 
 ## Delete / merge policy
-- Delete or merge only when MiMoCode release validation is replaced by another
-  durable memory and the replacement preserves current release facts.
-
-## Applies to
-- `VERSION`
-- `CHANGELOG.md`
-- `SECURITY.md`
-- `.github/`
-- `scripts/validate_fast.sh`
-- `scripts/doctor_system_mimocode.sh`
-
-## Source of truth
-- The `Current source of truth` section above, plus current code,
-  configuration, tests, git state, and live GitHub release state.
-
-## Invariants
-- Do not certify a MiMoCode release without local validators, pytest, GitHub
-  Release evidence, and clean artifact hygiene.
-- Code, configuration, tests, validators, git state, and live GitHub state
-  override this memory when they disagree.
-
-## Current State
-- See `Facts` for current durable facts.
-
-## Do Not Infer
-- Do not infer CI success from UI impressions or branch names. Use machine
-  evidence where available and mark unavailable evidence as `NOT_PROVEN`.
-
-## Update Triggers
-- Update after release version changes, CI/governance changes, release evidence
-  changes, or runtime doctor behavior changes.
-
-## Validation Commands
-- `python3 scripts/validate_fast.sh`
-- `python3 -m pytest -q`
-- `python3 scripts/doctor_system_mimocode.sh --redact`
-
-## Repair Procedure
-- Re-read release surfaces and CI policy, update only verified current facts,
-  then rerun the validation commands.
+- Delete or merge only when the referenced source-of-truth files no longer support this memory and the replacement memory preserves the durable facts.
