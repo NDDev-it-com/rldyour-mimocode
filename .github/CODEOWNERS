@@ -1,1 +1,17 @@
+# Global owners for all files in this repository.
 * @rldyourmnd
+
+# Governance, security, and release-critical paths.
+.github/** @rldyourmnd
+.github/workflows/** @rldyourmnd
+.github/dependabot.yml @rldyourmnd
+.github/CODEOWNERS @rldyourmnd
+
+# Native config and validation surfaces.
+/.mimocode/ @rldyourmnd
+/config/ @rldyourmnd
+/scripts/ @rldyourmnd
+/tests/ @rldyourmnd
+/pyproject.toml @rldyourmnd
+/README.md @rldyourmnd
+/SECURITY.md @rldyourmnd
