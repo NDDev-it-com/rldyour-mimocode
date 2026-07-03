@@ -1,25 +1,22 @@
 <!-- Memory Metadata
-Last updated: 2026-06-26
-Last verified: 2026-06-26
+Last updated: 2026-05-22
 Last commit: c219a9beb8743a44add8d961733b2fac2d6a69ea chore(release): prepare mimocode 1.7.7 (no-fullrepo)
-Scope: MiMoCode browser-provider routing
-Area: BROWSER-->
+Scope: browser-visible validation and debugging workflows
+Area: BROWSER
+-->
 
 # BROWSER-01-VALIDATION
 
 ## Scope
-MiMoCode browser-provider routing.
+browser-visible validation and debugging workflows
 
 ## Current source of truth
-- `path:config/browser-provider-policy.json`
-- `path:.mimocode/skills/browser-review/SKILL.md`
-- `path:.mimocode/agent/rldyour-browser-worker.md`
-- `path:scripts/validate_mimocode_browser_provider_policy.py`
+- `path:README.md`
 
 ## Last verified
-- date: 2026-06-26
+- date: 2026-05-22
 - commit: `c219a9beb8743a44add8d961733b2fac2d6a69ea`
-- checked by: Codex rldyour-flow sync
+- checked by: Codex ry-start memory taxonomy sync
 
 ## Facts
 - Webwright is the high-level long-horizon browser workflow provider.
@@ -31,53 +28,14 @@ MiMoCode browser-provider routing.
   providers until a separate provider model and validator are added.
 
 ## Evidence
-- `path:config/browser-provider-policy.json`
-- `path:.mimocode/skills/browser-review/SKILL.md`
-- `path:.mimocode/agent/rldyour-browser-worker.md`
-- `path:scripts/validate_mimocode_browser_provider_policy.py`
+- `commit:c219a9beb8743a44add8d961733b2fac2d6a69ea`
+- `path:README.md`
 
 ## Known pitfalls
-- Do not treat a future MiMoCode built-in browser feature as approved just
-  because the runtime exposes it.
+- Treat this memory as derived context. Current code, configuration, runtime output, and GitHub state override stale memory text.
 
 ## Update policy
-Update after browser provider policy, browser skills, browser worker agents, or
-browser validation commands change.
+Update after verified changes to the referenced source-of-truth files.
 
 ## Delete / merge policy
-- Delete or merge only when MiMoCode no longer projects browser-provider
-  routing and the replacement memory preserves the durable facts.
-
-## Applies to
-- `.mimocode/skills/browser-review/SKILL.md`
-- `.mimocode/agent/rldyour-browser-worker.md`
-- `config/browser-provider-policy.json`
-
-## Source of truth
-- The `Current source of truth` section above, plus current root browser
-  provider policy and active provider inventory validators.
-
-## Invariants
-- Browser routing is positive-inventory-based.
-- Unapproved browser providers must not be added without root policy updates.
-- Code, configuration, tests, validators, git state, and live GitHub state
-  override this memory when they disagree.
-
-## Current State
-- See `Facts` for current durable facts.
-
-## Do Not Infer
-- Do not infer active provider approval from historical tool names or runtime
-  availability alone.
-
-## Update Triggers
-- Update after browser provider policy, browser workflow, skill, agent, or
-  validator changes.
-
-## Validation Commands
-- `python3 scripts/validate_mimocode_browser_provider_policy.py --strict`
-- `python3 scripts/validate_fast.sh`
-
-## Repair Procedure
-- Re-read browser policy and native browser skill/agent files, update only
-  verified facts, then rerun the validation commands.
+- Delete or merge only when the referenced source-of-truth files no longer support this memory and the replacement memory preserves the durable facts.
