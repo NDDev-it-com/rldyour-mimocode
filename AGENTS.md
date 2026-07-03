@@ -1,5 +1,6 @@
 # AGENTS.md - rldyour-mimocode
 
+rldyour AI CLI configuration for MiMoCode: native .mimocode config, build/plan/compose agents, persistent memory projection, commands, skills, MCP, browser routing, and runtime validation.
 This is the MiMoCode adapter package for the rldyour AI CLI control plane.
 It owns MiMoCode-native project configuration under `.mimocode/`, runtime
 validation rules, and command/agent/skill projection.
