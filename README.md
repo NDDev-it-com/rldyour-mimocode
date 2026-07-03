@@ -12,9 +12,9 @@ rldyour AI CLI configuration for MiMoCode: native .mimocode config, build/plan/c
 
 | Surface | Value |
 | --- | --- |
-| Adapter version | `1.7.15` |
+| Adapter version | `1.7.16` |
 | Runtime baseline | MiMoCode `0.1.4` |
-| GitHub release tag | `1.7.15` |
+| GitHub release tag | `1.7.16` |
 
 ## What This Repository Provides
 
@@ -98,9 +98,9 @@ a missing runtime as success. For full `ry-repair` convergence, see
 | Server | Transport | Package / URL |
 | --- | --- | --- |
 | serena | local | `serena-agent==1.5.3` via `uvx` |
-| chrome-devtools | local | `chrome-devtools-mcp@1.4.0` via `bunx` |
+| chrome-devtools | local | `chrome-devtools-mcp@1.5.0` via `bunx` |
 | sequential-thinking | local | `@modelcontextprotocol/server-sequential-thinking@2025.12.18` via `bunx` |
-| shadcn | local | `shadcn@4.12.0` via `bunx` |
+| shadcn | local | `shadcn@4.13.0` via `bunx` |
 | dart-flutter | local | `dart mcp-server` |
 | context7 | local | `@upstash/context7-mcp@3.2.2` via `bunx` |
 | github | remote | `https://api.githubcopilot.com/mcp/` |
@@ -120,7 +120,7 @@ plane:
 - **Webwright** - long-horizon web workflows and reusable evidence scripts.
 - **Playwright CLI** - deterministic screenshots, snapshots, traces, and visual
   evidence.
-- **Chrome DevTools MCP** (`chrome-devtools-mcp@1.4.0`) - console, network,
+- **Chrome DevTools MCP** (`chrome-devtools-mcp@1.5.0`) - console, network,
   performance, memory, Lighthouse, and live Chrome debugging.
 
 MiMoCode built-in or future browser features are disabled as release providers
