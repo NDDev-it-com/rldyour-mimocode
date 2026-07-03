@@ -1,7 +1,7 @@
 <!-- Memory Metadata
-Last updated: 2026-06-27
-Last verified: 2026-06-27
-Last commit: 4a865c42322c0fe28033d0b9c2e36786f183f889 chore(release): mimocode 1.7.15 (other)
+Last updated: 2026-07-03
+Last verified: 2026-07-03
+Last commit: e239f9df6caa67bb408f763b478ea1f2ce49e9f3 chore(release): mimocode 1.7.16 (other)
 Scope: MiMoCode release validation
 Area: RELEASE-->
 
@@ -21,12 +21,12 @@ MiMoCode release validation.
 - `path:scripts/doctor_system_mimocode.sh`
 
 ## Last verified
-- date: 2026-06-27
-- commit: `e48c99acf0fec17651beb3ecc89103370d2d9b99`
-- checked by: Codex rldyour-flow sync
+- date: 2026-07-03
+- commit: `e239f9df6caa67bb408f763b478ea1f2ce49e9f3`
+- checked by: Codex rldyour-flow sync and tracked memory refresh
 
 ## Facts
-- Current adapter release is `1.7.15`.
+- Current adapter release is `1.7.16`.
 - Initial adapter release was `1.0.0`.
 - Runtime baseline is MiMoCode `0.1.4`.
 - Public CI must use GitHub-hosted runners and SHA-pinned actions.
