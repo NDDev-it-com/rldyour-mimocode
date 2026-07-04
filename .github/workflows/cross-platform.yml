@@ -31,6 +31,6 @@ jobs:
         with:
           python-version: "3.13"
       - name: Install validation dependencies
-        run: python3 -m pip install --user pytest
+        run: python3 -m pip install --user "pytest==9.1.1"
       - name: Static smoke
         run: scripts/validate_fast.sh
