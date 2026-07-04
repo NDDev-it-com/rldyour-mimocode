@@ -1,6 +1,6 @@
 [project]
 name = "rldyour-mimocode"
-version = "1.7.18"
+version = "1.7.20"
 description = "rldyour AI CLI configuration for MiMoCode: native .mimocode config, build/plan/compose agents, persistent memory projection, commands, skills, MCP, browser routing, and runtime validation."
 readme = "README.md"
 requires-python = ">=3.13,<3.14"
