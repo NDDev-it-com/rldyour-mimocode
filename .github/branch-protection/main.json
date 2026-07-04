@@ -3,12 +3,15 @@
   "required_status_checks": [
     "Validate",
     "Pytest",
-    "Actionlint",
-    "CodeQL",
-    "Secret scan",
+    "Actionlint / actionlint",
+    "CodeQL (python) / CodeQL (python)",
+    "CodeQL (actions) / CodeQL (actions)",
+    "Secret scan / Gitleaks secret scan",
     "Dependency check",
-    "Scorecard",
-    "Cross-platform smoke"
+    "Scorecard / OSSF Scorecard analysis",
+    "Cross-platform smoke / smoke (ubuntu-latest)",
+    "Cross-platform smoke / smoke (macos-latest)",
+    "Cross-platform smoke / smoke (windows-latest)"
   ],
   "strict_required_status_checks": true,
   "allow_force_pushes": false,
@@ -23,6 +26,6 @@
   "notes": [
     "This file documents the desired branch protection state for the public main branch.",
     "Required status checks must use exact job names emitted by .github/workflows/*.yml.",
-    "Scorecard must run on pull_request and push if it is required."
+    "Scorecard runs on push and schedule only; GitHub required checks use the latest default-branch push result."
   ]
 }
