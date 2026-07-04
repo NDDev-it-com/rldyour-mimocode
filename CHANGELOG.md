@@ -51,6 +51,12 @@
 ## [Unreleased]
 
 
+## [1.7.21] - 2026-07-04
+
+### Fixed
+
+- Adopt nddev-ci-workflows 0.2.3 and fix reusable CI edge cases.
+
 ## [1.7.20] - 2026-07-04
 
 ### Fixed
