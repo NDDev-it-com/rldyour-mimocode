@@ -1,6 +1,6 @@
 <!-- Memory Metadata
-Last updated: 2026-05-22
-Last verified: 2026-05-22
+Last updated: 2026-07-07
+Last verified: 2026-07-07
 Last commit: e239f9df6caa67bb408f763b478ea1f2ce49e9f3 chore(release): mimocode 1.7.16 (other)
 Scope: release readiness, versioning, and artifact hygiene
 Area: RELEASE
@@ -22,7 +22,7 @@ release readiness, versioning, and artifact hygiene
 - checked by: Codex ry-start memory taxonomy sync
 
 ## Facts
-- Current adapter release is `1.7.21`.
+- Current adapter release is `1.7.22`.
 - Initial adapter release was `1.0.0`.
 - Runtime baseline is MiMoCode `0.1.4`.
 - Public CI must use GitHub-hosted runners and SHA-pinned actions.
