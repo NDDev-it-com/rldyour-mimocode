@@ -51,6 +51,22 @@
 ## [Unreleased]
 
 
+## [1.7.22] - 2026-07-07
+
+### Changed
+
+- Pin the default `model` and `small_model` to `xiaomi/mimo-v2.5-pro`
+  (owner max-power directive 2026-07-07; the id is proven against the
+  installed MiMoCode 0.1.4 provider catalog via `mimo models`).
+- Enable experimental max mode as the schema-valid object form
+  (`"maxMode": {"candidates": 5}`): MiMoCode 0.1.4 validates
+  `experimental.maxMode` as an object, so the previous `false` boolean
+  failed config validation (`expected object, received boolean`) and
+  blocked `mimo debug config`/`mimo models` on installed machines. The
+  object form both fixes validation and registers the `max` agent
+  (N parallel reasoning candidates with judge selection).
+
+
 ## [1.7.21] - 2026-07-04
 
 ### Fixed
