@@ -51,6 +51,17 @@
 ## [Unreleased]
 
 
+## [1.7.23] - 2026-07-07
+
+### Fixed
+
+- Realign the release line: the `1.7.22` tag was created before
+  `MEMORY.md` recorded the current adapter version (MEMORY.md is
+  release-relevant by the commit-layer policy), so the tag could not
+  match the pinned expected head. `1.7.23` tags the fully aligned tree
+  and supersedes `1.7.22` as the current release.
+
+
 ## [1.7.22] - 2026-07-07
 
 ### Changed
