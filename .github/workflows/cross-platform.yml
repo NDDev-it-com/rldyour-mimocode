@@ -23,7 +23,7 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu-latest, macos-latest, windows-latest]
-    uses: NDDev-it-com/nddev-ci-workflows/.github/workflows/cross-platform-smoke.yml@71f4345cad2998a16e8e14b800eee88c68d865ac # 0.2.3
+    uses: NDDev-it-com/nddev-ci-workflows/.github/workflows/cross-platform-smoke.yml@86f3e6d70a632561527379e5f962f57de81eb751 # 0.2.4
     with:
       os_list: '["${{ matrix.os }}"]'
       command: python3 -m pip install --user "pytest==9.1.1" && scripts/validate_fast.sh
