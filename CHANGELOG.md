@@ -51,6 +51,12 @@
 ## [Unreleased]
 
 
+## [1.7.27] - 2026-07-08
+
+### Changed
+
+- Clean release: adopt nddev-ci-workflows 0.3.0 reusable CI and sole-authorship commit policy
+
 ## [1.7.26] - 2026-07-08
 
 ### Fixed
