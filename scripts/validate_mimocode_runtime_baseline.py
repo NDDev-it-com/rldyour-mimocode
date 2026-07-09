@@ -14,11 +14,15 @@ def validate() -> None:
     adapter = contract.get("adapter") or {}
     require(adapter.get("id") == "mimocode", "contract adapter id must be mimocode")
     require(adapter.get("version") == version, "contract adapter version must match VERSION")
-    require(adapter.get("runtime_version") == "0.1.4", "contract runtime version must be 0.1.4")
-    require(baseline.get("upstream_release") == "v0.1.4", "baseline upstream release must be v0.1.4")
+    require(adapter.get("runtime_version") == "0.1.5", "contract runtime version must be 0.1.5")
+    require(baseline.get("upstream_release") == "v0.1.5", "baseline upstream release must be v0.1.5")
     require(baseline.get("binary") == "mimo", "runtime binary must be mimo")
     require((baseline.get("npm") or {}).get("package") == "@mimo-ai/cli", "npm package metadata must name @mimo-ai/cli")
-    require((baseline.get("install") or {}).get("primary_command", "").endswith("--version 0.1.4 --no-modify-path"), "primary install command must be version-pinned and avoid PATH mutation")
+    install = baseline.get("install") or {}
+    require(baseline.get("target_channel") == "rldyour-bootstrap-frozen-bun-lock", "runtime channel must be the bootstrap-owned frozen lock")
+    require(install.get("lock_source") == "templates/ai-cli/bun.lock", "runtime lock source must be explicit")
+    require(install.get("managed_wrapper") == "$HOME/.local/bin/mimo", "managed wrapper path must be explicit")
+    require(install.get("remote_script_execution") is False, "remote installer scripts must remain disabled")
 
 
 def main() -> int:

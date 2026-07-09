@@ -2,13 +2,14 @@
 
 Runtime install is intentionally separate from adapter config materialization.
 
-Install the MiMoCode runtime with a version pin:
+Install the runtime through `rldyour-new-mac-or-ubuntu`'s frozen AI CLI bundle:
 
 ```bash
-curl -fsSL https://mimo.xiaomi.com/install | bash -s -- --version 0.1.4 --no-modify-path
+bash scripts/bootstrap.sh --platform <macos|ubuntu> --profile <desktop|server> --apply
 ```
 
-Then materialize rldyour system config:
+That bootstrap publishes the exact managed `~/.local/bin/mimo` wrapper without
+executing a remote installer stream. Then materialize rldyour system config:
 
 ```bash
 bash scripts/install_system_mimocode.sh --apply

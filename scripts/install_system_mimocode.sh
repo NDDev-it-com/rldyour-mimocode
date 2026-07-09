@@ -6,9 +6,9 @@ usage() {
 Usage: scripts/install_system_mimocode.sh [--plan|--apply] [--mimocode-home PATH]
 
 Materializes rldyour-mimocode into the local MiMoCode global config directory.
-This does not install the MiMoCode runtime binary. Install runtime separately:
-
-  curl -fsSL https://mimo.xiaomi.com/install | bash -s -- --version 0.1.4 --no-modify-path
+This does not install the MiMoCode runtime binary. The parent workstation
+bootstrap installs @mimo-ai/cli@0.1.5 from its frozen Bun lock and publishes
+the managed $HOME/.local/bin/mimo wrapper. Remote scripts are not executed.
 USAGE
 }
 

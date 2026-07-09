@@ -28,7 +28,7 @@ Do not introduce Claude/Antigravity/Codex native config formats as runtime contr
 
 ## Runtime Baseline
 
-- MiMoCode runtime version is `0.1.4` (from `config/mimocode-baseline.json`).
+- MiMoCode runtime version is `0.1.5` (from `config/mimocode-baseline.json`).
 - `curl` installer path and optional npm secondary channel are validated via
   dedicated runtime checks.
 

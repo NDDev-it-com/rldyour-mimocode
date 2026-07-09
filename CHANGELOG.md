@@ -50,6 +50,17 @@
 
 ## [Unreleased]
 
+## [1.7.28] - 2026-07-10
+
+### Changed
+
+- Route MiMoCode Chrome DevTools MCP through the exact managed CloakBrowser
+  wrapper, forbid browser fallback, and align Playwright CLI to `0.1.17`.
+- Refresh the MiMoCode runtime baseline to `0.1.5` and delegate installation to
+  the bootstrap-owned frozen Bun lock instead of a streamed remote script.
+- Pin reusable CI workflows to the checksum-closed `nddev-ci-workflows` `0.5.1`
+  release commit.
+
 
 ## [1.7.27] - 2026-07-08
 

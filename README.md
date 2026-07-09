@@ -12,9 +12,9 @@ rldyour AI CLI configuration for MiMoCode: native .mimocode config, build/plan/c
 
 | Surface | Value |
 | --- | --- |
-| Adapter version | `1.7.27` |
-| Runtime baseline | MiMoCode `0.1.4` |
-| GitHub release tag | `1.7.27` |
+| Adapter version | `1.7.28` |
+| Runtime baseline | MiMoCode `0.1.5` |
+| GitHub release tag | `1.7.28` |
 
 ## What This Repository Provides
 
@@ -54,18 +54,15 @@ and must not be described as hidden daemon orchestration.
 
 ## Install / Update / ry-repair
 
-Install the MiMoCode runtime with a version pin:
+Install the MiMoCode runtime through the parent bootstrap's frozen AI CLI lock:
 
 ```bash
-curl -fsSL https://mimo.xiaomi.com/install | bash -s -- --version 0.1.4 --no-modify-path
+bash scripts/bootstrap.sh --platform <macos|ubuntu> --profile <desktop|server> --apply
 ```
 
-The binary installs to `$HOME/.mimocode/bin/mimo`. As a secondary channel,
-after registry provenance validation:
-
-```bash
-bun add -g @mimo-ai/cli@0.1.4
-```
+The bootstrap verifies the exact `@mimo-ai/cli@0.1.5` package from its tracked
+`templates/ai-cli/bun.lock` and publishes `$HOME/.local/bin/mimo`. This adapter
+does not execute a network-fetched installer or mutate a global Bun prefix.
 
 Materialize rldyour system config and verify the runtime:
 
@@ -98,7 +95,7 @@ a missing runtime as success. For full `ry-repair` convergence, see
 | Server | Transport | Package / URL |
 | --- | --- | --- |
 | serena | local | `serena-agent==1.5.3` via `uvx` |
-| chrome-devtools | local | `chrome-devtools-mcp@1.5.0` via `bunx` |
+| chrome-devtools | local | managed CloakBrowser wrapper, runtime `1.5.0` |
 | sequential-thinking | local | `@modelcontextprotocol/server-sequential-thinking@2025.12.18` via `bunx` |
 | shadcn | local | `shadcn@4.13.0` via `bunx` |
 | dart-flutter | local | `dart mcp-server` |
@@ -120,7 +117,7 @@ plane:
 - **Webwright** - long-horizon web workflows and reusable evidence scripts.
 - **Playwright CLI** - deterministic screenshots, snapshots, traces, and visual
   evidence.
-- **Chrome DevTools MCP** (`chrome-devtools-mcp@1.5.0`) - console, network,
+- **Chrome DevTools MCP** (managed CloakBrowser wrapper, runtime `1.5.0`) - console, network,
   performance, memory, Lighthouse, and live Chrome debugging.
 
 MiMoCode built-in or future browser features are disabled as release providers

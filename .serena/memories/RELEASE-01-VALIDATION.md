@@ -17,14 +17,14 @@ release readiness, versioning, and artifact hygiene
 - `path:.github/workflows/release.yml`
 
 ## Last verified
-- date: 2026-05-22
+- date: 2026-07-10
 - commit: `e239f9df6caa67bb408f763b478ea1f2ce49e9f3`
 - checked by: Codex ry-start memory taxonomy sync
 
 ## Facts
-- Current adapter release is `1.7.27`.
+- Current adapter release is `1.7.28`.
 - Initial adapter release was `1.0.0`.
-- Runtime baseline is MiMoCode `0.1.4`.
+- Runtime baseline is MiMoCode `0.1.5`.
 - Public CI must use GitHub-hosted runners and SHA-pinned actions.
 - Required status checks must be emitted on `pull_request` and
   protected-branch `push`.

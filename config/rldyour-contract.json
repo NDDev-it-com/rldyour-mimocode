@@ -3,11 +3,11 @@
   "adapter": {
     "id": "mimocode",
     "name": "rldyour-mimocode",
-    "version": "1.7.27",
+    "version": "1.7.28",
     "runtime": "mimocode",
     "runtime_binary": "mimo",
     "runtime_package": "@mimo-ai/cli",
-    "runtime_version": "0.1.4",
+    "runtime_version": "0.1.5",
     "license": "AGPL-3.0-or-later"
   },
   "native_surfaces": [

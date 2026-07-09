@@ -12,7 +12,7 @@ MiMoCode adapter memory for `rldyour-mimocode`.
 
 ## Runtime Baseline
 
-- Runtime package: `@mimo-ai/cli@0.1.4` (secondary/npm channel).
+- Runtime package: `@mimo-ai/cli@0.1.5` (secondary/npm channel).
 - Primary install is GitHub release pin in runtime baseline file.
 
 ## Workflow

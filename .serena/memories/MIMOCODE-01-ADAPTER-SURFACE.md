@@ -1,6 +1,6 @@
 <!-- Memory Metadata
-Last updated: 2026-05-22
-Last verified: 2026-05-22
+Last updated: 2026-07-10
+Last verified: 2026-07-10
 Last commit: c219a9beb8743a44add8d961733b2fac2d6a69ea chore(release): prepare mimocode 1.7.7 (no-fullrepo)
 Scope: MIMOCODE repository knowledge
 Area: MIMOCODE
@@ -15,15 +15,15 @@ MIMOCODE repository knowledge
 - `path:README.md`
 
 ## Last verified
-- date: 2026-05-22
+- date: 2026-07-10
 - commit: `c219a9beb8743a44add8d961733b2fac2d6a69ea`
 - checked by: Codex ry-start memory taxonomy sync
 
 ## Facts
-- Adapter version is `1.7.7`.
-- Runtime baseline is MiMoCode `0.1.4` with binary `mimo`.
-- Primary runtime install channel is the official Xiaomi MiMo installer pinned
-  to `0.1.4`; npm `@mimo-ai/cli@0.1.4` is secondary provenance.
+- Adapter version is `1.7.28`.
+- Runtime baseline is MiMoCode `0.1.5` with binary `mimo`.
+- Primary runtime install channel is the parent bootstrap's frozen Bun lock;
+  `@mimo-ai/cli@0.1.5` is cross-checked against the official `v0.1.5` release.
 - Native config surfaces are `.mimocode/mimocode.jsonc`, `.mimocode/tui.json`,
   `.mimocode/agent/*.md`, `.mimocode/command/*.md`, and
   `.mimocode/skills/*/SKILL.md`.

@@ -1,6 +1,6 @@
 <!-- Memory Metadata
-Last updated: 2026-05-22
-Last verified: 2026-05-22
+Last updated: 2026-07-10
+Last verified: 2026-07-10
 Last commit: c219a9beb8743a44add8d961733b2fac2d6a69ea chore(release): prepare mimocode 1.7.7 (no-fullrepo)
 Scope: repository identity and source-of-truth map
 Area: CORE
@@ -17,14 +17,14 @@ repository identity and source-of-truth map
 - `path:CHANGELOG.md`
 
 ## Last verified
-- date: 2026-05-22
+- date: 2026-07-10
 - commit: `c219a9beb8743a44add8d961733b2fac2d6a69ea`
 - checked by: Codex ry-start memory taxonomy sync
 
 ## Facts
 - `rldyour-mimocode` is the MiMoCode-native adapter repository.
-- The current adapter release is `1.7.7`.
-- The runtime baseline is MiMoCode `0.1.4` with binary `mimo`.
+- The current adapter release is `1.7.28`.
+- The runtime baseline is MiMoCode `0.1.5` with binary `mimo`.
 - The adapter owns `.mimocode` config, agent, command, skill, MCP, browser,
   cmux-worker, and runtime memory projection surfaces.
 - Serena memories are durable cross-tool facts. MiMoCode `MEMORY.md` is a

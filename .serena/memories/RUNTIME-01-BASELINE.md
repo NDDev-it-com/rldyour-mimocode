@@ -1,6 +1,6 @@
 <!-- Memory Metadata
-Last updated: 2026-05-22
-Last verified: 2026-05-22
+Last updated: 2026-07-10
+Last verified: 2026-07-10
 Last commit: c219a9beb8743a44add8d961733b2fac2d6a69ea chore(release): prepare mimocode 1.7.7 (no-fullrepo)
 Scope: CLI runtime and package baselines
 Area: RUNTIME
@@ -15,17 +15,17 @@ CLI runtime and package baselines
 - `path:README.md`
 
 ## Last verified
-- date: 2026-05-22
+- date: 2026-07-10
 - commit: `c219a9beb8743a44add8d961733b2fac2d6a69ea`
 - checked by: Codex ry-start memory taxonomy sync
 
 ## Facts
-- Runtime baseline is MiMoCode `0.1.4`.
+- Runtime baseline is MiMoCode `0.1.5`.
 - Runtime binary is `mimo`.
-- Primary install channel is the official Xiaomi MiMo installer pinned to
-  `0.1.4` with `--no-modify-path`.
-- npm `@mimo-ai/cli@0.1.4` is secondary provenance and must not replace the
-  primary installer channel without explicit validation.
+- Primary install channel is the parent bootstrap's frozen Bun lock, with a
+  managed `~/.local/bin/mimo` wrapper and no remote script execution.
+- npm `@mimo-ai/cli@0.1.5` is cross-checked against the official `v0.1.5`
+  GitHub release before the lock is refreshed.
 - The runtime doctor must report `NOT_PROVEN` when `mimo` is unavailable.
 
 ## Evidence
