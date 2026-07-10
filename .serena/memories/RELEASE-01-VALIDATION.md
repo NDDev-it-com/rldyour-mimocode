@@ -22,7 +22,7 @@ release readiness, versioning, and artifact hygiene
 - checked by: MiMoCode 1.7.30 release validation
 
 ## Facts
-- Current adapter release is `1.7.30`.
+- Current adapter release is `1.7.31`.
 - Initial adapter release was `1.0.0`.
 - Runtime baseline is MiMoCode `0.1.5`.
 - Public CI must use GitHub-hosted runners and SHA-pinned actions.
