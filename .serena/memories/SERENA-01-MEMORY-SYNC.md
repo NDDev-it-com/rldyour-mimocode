@@ -1,7 +1,7 @@
 <!-- Memory Metadata
 Last updated: 2026-05-22
 Last verified: 2026-05-22
-Last commit: c219a9beb8743a44add8d961733b2fac2d6a69ea chore(release): prepare mimocode 1.7.7 (no-fullrepo)
+Last commit: 943ce4031fc4d87b2108cc19a009f4d89ec3be18 chore(release): mimocode 1.7.31 (other)
 Scope: Serena memory, fullrepo, and knowledge sync policy
 Area: SERENA
 -->
@@ -17,7 +17,7 @@ Serena memory, fullrepo, and knowledge sync policy
 
 ## Last verified
 - date: 2026-05-22
-- commit: `c219a9beb8743a44add8d961733b2fac2d6a69ea`
+- commit: `943ce4031fc4d87b2108cc19a009f4d89ec3be18`
 - checked by: Codex ry-start memory taxonomy sync
 
 ## Facts
@@ -29,7 +29,7 @@ Serena memory, fullrepo, and knowledge sync policy
   runtime projection.
 
 ## Evidence
-- `commit:c219a9beb8743a44add8d961733b2fac2d6a69ea`
+- `commit:943ce4031fc4d87b2108cc19a009f4d89ec3be18`
 - `path:.serena/project.yml`
 - `path:README.md`
 

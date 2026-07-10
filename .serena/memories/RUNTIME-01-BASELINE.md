@@ -1,7 +1,7 @@
 <!-- Memory Metadata
 Last updated: 2026-07-10
 Last verified: 2026-07-10
-Last commit: c219a9beb8743a44add8d961733b2fac2d6a69ea chore(release): prepare mimocode 1.7.7 (no-fullrepo)
+Last commit: 943ce4031fc4d87b2108cc19a009f4d89ec3be18 chore(release): mimocode 1.7.31 (other)
 Scope: CLI runtime and package baselines
 Area: RUNTIME
 -->
@@ -16,7 +16,7 @@ CLI runtime and package baselines
 
 ## Last verified
 - date: 2026-07-10
-- commit: `c219a9beb8743a44add8d961733b2fac2d6a69ea`
+- commit: `943ce4031fc4d87b2108cc19a009f4d89ec3be18`
 - checked by: Codex ry-start memory taxonomy sync
 
 ## Facts
@@ -29,7 +29,7 @@ CLI runtime and package baselines
 - The runtime doctor must report `NOT_PROVEN` when `mimo` is unavailable.
 
 ## Evidence
-- `commit:c219a9beb8743a44add8d961733b2fac2d6a69ea`
+- `commit:943ce4031fc4d87b2108cc19a009f4d89ec3be18`
 - `path:README.md`
 
 ## Known pitfalls
