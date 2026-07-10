@@ -2,6 +2,13 @@
 
 ## [Unreleased]
 
+
+## [1.7.31] - 2026-07-10
+
+### Fixed
+
+- Eliminate CodeQL implicit string concatenation findings.
+
 ## [1.7.30] - 2026-07-10
 
 ### Security
