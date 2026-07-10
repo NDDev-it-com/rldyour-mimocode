@@ -25,5 +25,29 @@
     "pull_requests",
     "users"
   ],
+  "runtime_pins": {
+    "sequential-thinking": "@modelcontextprotocol/server-sequential-thinking@2026.7.4",
+    "context7": "@upstash/context7-mcp@3.2.3"
+  },
+  "registry_provenance": {
+    "verified_on": "2026-07-10",
+    "packages": {
+      "sequential-thinking": {
+        "dist_integrity": "sha512-tmR/ieGaeweffLNBrDp1H1w4sn4M6TN5yWSbMS+YMfS+0GDyPjnNKzqCl2uqfdRiX3D44PJUhwiDGqtJp6tFhw==",
+        "dist_shasum": "2fee9c40358565f847eddfc877efba13f98527ef",
+        "upstream_tag": "2026.7.4",
+        "upstream_commit": "6dd0a683e198783e30feabf7abaf42f925bd18b1"
+      },
+      "context7": {
+        "dist_integrity": "sha512-9L/9ufypc6lvlmiGxMLw/O94c8UcTCIvBI+o1R+FHVTgRw2lzg9FPGwcrKWuIOsAXH0+6pWFWm4dJWHbCm92sw==",
+        "dist_shasum": "ce45119ebfdc94b23646f00262f31f4eddb8b84c",
+        "upstream_tag": "@upstash/context7-mcp@3.2.3",
+        "upstream_commit": "98baa58d3625e2529e000f1c9f658fff25081bbb"
+      }
+    },
+    "stdio_probe": "initialize+notifications/initialized+tools/list",
+    "protocol_version": "2025-11-25",
+    "production_audit_vulnerabilities": 0
+  },
   "positive_inventory_only": true
 }

@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import re
 import time
 from pathlib import Path
 from typing import Any
@@ -36,7 +37,38 @@ def build_sbom() -> dict[str, Any]:
     runtime_package = str(adapter["runtime_package"])
     runtime_version = str(adapter["runtime_version"])
     root_package = f"SPDXRef-Package-{name}"
-    runtime_ref = f"SPDXRef-Package-{runtime_package.replace('@', '').replace('/', '-') }"
+    runtime_ref = (
+        f"SPDXRef-Package-{runtime_package.replace('@', '').replace('/', '-')}"
+    )
+    mcp_packages: list[dict[str, Any]] = []
+    mcp_relationships: list[dict[str, str]] = []
+    mcp_licenses = {
+        "@modelcontextprotocol/server-sequential-thinking": "NOASSERTION",
+        "@upstash/context7-mcp": "MIT",
+    }
+    for package_spec in sorted((contract.get("mcp_runtime_pins") or {}).values()):
+        package_name, package_version = str(package_spec).rsplit("@", 1)
+        package_ref = f"SPDXRef-Package-{re.sub(r'[^A-Za-z0-9.-]+', '-', package_name).strip('-')}"
+        mcp_packages.append(
+            {
+                "name": package_name,
+                "SPDXID": package_ref,
+                "versionInfo": package_version,
+                "downloadLocation": f"https://www.npmjs.com/package/{package_name}/v/{package_version}",
+                "filesAnalyzed": False,
+                "licenseConcluded": "NOASSERTION",
+                "licenseDeclared": mcp_licenses.get(package_name, "NOASSERTION"),
+                "copyrightText": "NOASSERTION",
+                "supplier": "NOASSERTION",
+            }
+        )
+        mcp_relationships.append(
+            {
+                "spdxElementId": root_package,
+                "relationshipType": "DEPENDS_ON",
+                "relatedSpdxElement": package_ref,
+            }
+        )
     return {
         "spdxVersion": "SPDX-2.3",
         "dataLicense": "CC0-1.0",
@@ -70,7 +102,8 @@ def build_sbom() -> dict[str, Any]:
                 "copyrightText": "NOASSERTION",
                 "supplier": "NOASSERTION",
             },
-        ],
+        ]
+        + mcp_packages,
         "relationships": [
             {
                 "spdxElementId": "SPDXRef-DOCUMENT",
@@ -82,7 +115,8 @@ def build_sbom() -> dict[str, Any]:
                 "relationshipType": "DEPENDS_ON",
                 "relatedSpdxElement": runtime_ref,
             },
-        ],
+        ]
+        + mcp_relationships,
     }
 
 

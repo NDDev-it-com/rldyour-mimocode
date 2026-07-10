@@ -20,13 +20,15 @@ MIMOCODE repository knowledge
 - checked by: Codex ry-start memory taxonomy sync
 
 ## Facts
-- Adapter version is `1.7.28`.
+- Adapter version is `1.7.29`.
 - Runtime baseline is MiMoCode `0.1.5` with binary `mimo`.
 - Primary runtime install channel is the parent bootstrap's frozen Bun lock;
   `@mimo-ai/cli@0.1.5` is cross-checked against the official `v0.1.5` release.
 - Native config surfaces are `.mimocode/mimocode.jsonc`, `.mimocode/tui.json`,
   `.mimocode/agent/*.md`, `.mimocode/command/*.md`, and
   `.mimocode/skills/*/SKILL.md`.
+- Local MCP runtime pins are Sequential Thinking `2026.7.4` and Context7
+  `3.2.3`; both use exact `bunx` package specs over stdio.
 - MiMoCode is an active first-class adapter, not an OpenCode alias.
 
 ## Evidence

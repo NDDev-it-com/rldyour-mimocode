@@ -3,7 +3,7 @@
   "adapter": {
     "id": "mimocode",
     "name": "rldyour-mimocode",
-    "version": "1.7.28",
+    "version": "1.7.29",
     "runtime": "mimocode",
     "runtime_binary": "mimo",
     "runtime_package": "@mimo-ai/cli",
@@ -42,6 +42,10 @@
     "figma",
     "openai-docs"
   ],
+  "mcp_runtime_pins": {
+    "sequential-thinking": "@modelcontextprotocol/server-sequential-thinking@2026.7.4",
+    "context7": "@upstash/context7-mcp@3.2.3"
+  },
   "browser_provider_model": {
     "webwright": "high-level long-horizon browser workflows",
     "playwright-cli": "low-level screenshots, snapshots, traces, and visual evidence",

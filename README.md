@@ -12,9 +12,9 @@ rldyour AI CLI configuration for MiMoCode: native .mimocode config, build/plan/c
 
 | Surface | Value |
 | --- | --- |
-| Adapter version | `1.7.28` |
+| Adapter version | `1.7.29` |
 | Runtime baseline | MiMoCode `0.1.5` |
-| GitHub release tag | `1.7.28` |
+| GitHub release tag | `1.7.29` |
 
 ## What This Repository Provides
 
@@ -96,15 +96,20 @@ a missing runtime as success. For full `ry-repair` convergence, see
 | --- | --- | --- |
 | serena | local | `serena-agent==1.5.3` via `uvx` |
 | chrome-devtools | local | managed CloakBrowser wrapper, runtime `1.5.0` |
-| sequential-thinking | local | `@modelcontextprotocol/server-sequential-thinking@2025.12.18` via `bunx` |
+| sequential-thinking | local | `@modelcontextprotocol/server-sequential-thinking@2026.7.4` via `bunx` |
 | shadcn | local | `shadcn@4.13.0` via `bunx` |
 | dart-flutter | local | `dart mcp-server` |
-| context7 | local | `@upstash/context7-mcp@3.2.2` via `bunx` |
+| context7 | local | `@upstash/context7-mcp@3.2.3` via `bunx` |
 | github | remote | `https://api.githubcopilot.com/mcp/` |
 | deepwiki | remote | `https://mcp.deepwiki.com/mcp` |
 | grep | remote | `https://mcp.grep.app` |
 | figma | remote | `https://mcp.figma.com/mcp` |
 | openai-docs | remote | `https://developers.openai.com/mcp` |
+
+Sequential Thinking and Context7 are exact-pinned, validated against their npm
+registry digests, and exercised over MCP stdio with `initialize` and
+`tools/list`. See [MCP runtime provenance](docs/mcp-runtime-provenance.md) for
+the reproducible compatibility and supply-chain evidence.
 
 Permission policy: `allow` for all keys except `*.env` and `*.env.*` reads,
 which are `deny`. The `plan` agent sets `edit: deny` as its read-only mode.

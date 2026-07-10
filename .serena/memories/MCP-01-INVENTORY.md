@@ -1,6 +1,6 @@
 <!-- Memory Metadata
-Last updated: 2026-05-22
-Last verified: 2026-05-22
+Last updated: 2026-07-10
+Last verified: 2026-07-10
 Last commit: c219a9beb8743a44add8d961733b2fac2d6a69ea chore(release): prepare mimocode 1.7.7 (no-fullrepo)
 Scope: MCP runtime transport and pin policy
 Area: MCP
@@ -12,10 +12,13 @@ Area: MCP
 MCP runtime transport and pin policy
 
 ## Current source of truth
-- `path:README.md`
+- `path:.mimocode/mimocode.jsonc`
+- `path:config/mcp-inventory.json`
+- `path:config/rldyour-contract.json`
+- `path:docs/mcp-runtime-provenance.md`
 
 ## Last verified
-- date: 2026-05-22
+- date: 2026-07-10
 - commit: `c219a9beb8743a44add8d961733b2fac2d6a69ea`
 - checked by: Codex ry-start memory taxonomy sync
 
@@ -24,11 +27,22 @@ MCP runtime transport and pin policy
 - Chrome DevTools MCP remains the DevTools, performance, network, console,
   memory, and Lighthouse provider.
 - MiMoCode MCP configuration is stored in `.mimocode/mimocode.jsonc`.
+- Sequential Thinking is exact-pinned to
+  `@modelcontextprotocol/server-sequential-thinking@2026.7.4` via `bunx`.
+- Context7 is exact-pinned to `@upstash/context7-mcp@3.2.3` via `bunx`.
+- Both exact packages completed credential-free MCP stdio `initialize` and
+  `tools/list` probes using protocol `2025-11-25`.
+- Registry SHA-512 integrity, upstream annotated-tag commit targets, and the
+  zero-vulnerability production dependency audit are recorded in
+  `config/mcp-inventory.json`; the release SBOM lists both packages.
 - Removed or historical MCP tools are not active inventory.
 
 ## Evidence
 - `commit:c219a9beb8743a44add8d961733b2fac2d6a69ea`
-- `path:README.md`
+- `path:.mimocode/mimocode.jsonc`
+- `path:config/mcp-inventory.json`
+- `path:config/rldyour-contract.json`
+- `path:docs/mcp-runtime-provenance.md`
 
 ## Known pitfalls
 - Treat this memory as derived context. Current code, configuration, runtime output, and GitHub state override stale memory text.

@@ -50,6 +50,23 @@
 
 ## [Unreleased]
 
+## [1.7.29] - 2026-07-10
+
+### Changed
+
+- Refresh Sequential Thinking MCP to `2026.7.4` and Context7 MCP to `3.2.3`
+  while preserving the MiMoCode `0.1.5`, managed CloakBrowser, and reusable CI
+  `0.5.1` baselines.
+- Add exact MCP runtime-pin contracts, stale-pin regression tests, registry
+  provenance, stdio protocol evidence, and MCP dependencies to the release
+  SPDX SBOM.
+
+### Security
+
+- Verify both exact npm packages with their SHA-512 registry integrity values,
+  upstream annotated tag targets, successful MCP `initialize`/`tools/list`
+  exchanges, and a zero-vulnerability production dependency audit.
+
 ## [1.7.28] - 2026-07-10
 
 ### Changed

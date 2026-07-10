@@ -1,6 +1,6 @@
 # rldyour-mimocode Runtime Memory Projection
 
-Last commit: pending chore(release): mimocode 1.7.28 (release_metadata)
+Last commit: pending chore(release): mimocode 1.7.29 (release_metadata)
 
 This file is the MiMoCode-native project memory projection for the
 `rldyour-mimocode` adapter.
@@ -8,7 +8,7 @@ This file is the MiMoCode-native project memory projection for the
 Current facts:
 
 1. Adapter id: `mimocode`.
-2. Adapter version: `1.7.28`.
+2. Adapter version: `1.7.29`.
 3. Runtime baseline: MiMoCode `0.1.5`.
 4. Runtime binary: `mimo`.
 5. Upstream source: `https://github.com/XiaomiMiMo/MiMo-Code`.
@@ -21,6 +21,8 @@ Current facts:
    orchestrator mode.
 9. Serena memories are the cross-tool source of truth. MiMoCode runtime memory
    is a generated projection from verified facts.
+10. Sequential Thinking is pinned to `2026.7.4`, Context7 is pinned to `3.2.3`,
+    and both local MCP packages are validated as stdio transports.
 
 Runtime-only files such as `checkpoint.md`, `notes.md`, SQLite databases, and
 `tasks/<id>/progress.md` must remain ignored unless explicitly curated through a

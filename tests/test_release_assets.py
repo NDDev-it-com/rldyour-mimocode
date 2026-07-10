@@ -29,13 +29,33 @@ def test_release_sbom_has_spdx_shape() -> None:
     assert payload["packages"]
     assert payload["relationships"]
     assert any(package["name"] == "rldyour-mimocode" for package in payload["packages"])
+    package_versions = {
+        package["name"]: package["versionInfo"] for package in payload["packages"]
+    }
+    assert (
+        package_versions["@modelcontextprotocol/server-sequential-thinking"]
+        == "2026.7.4"
+    )
+    assert package_versions["@upstash/context7-mcp"] == "3.2.3"
+    dependency_targets = {
+        relationship["relatedSpdxElement"]
+        for relationship in payload["relationships"]
+        if relationship["relationshipType"] == "DEPENDS_ON"
+    }
+    assert (
+        "SPDXRef-Package-modelcontextprotocol-server-sequential-thinking"
+        in dependency_targets
+    )
+    assert "SPDXRef-Package-upstash-context7-mcp" in dependency_targets
 
 
 def test_release_assets_validate(tmp_path: Path) -> None:
     dist = tmp_path / "dist"
     write_artifacts(dist)
 
-    assert validate_release_assets.validate(dist) == ["ok: release archive, SPDX SBOM, and checksums validated"]
+    assert validate_release_assets.validate(dist) == [
+        "ok: release archive, SPDX SBOM, and checksums validated"
+    ]
 
 
 def test_release_assets_reject_marker_sbom(tmp_path: Path) -> None:
