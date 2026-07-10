@@ -1,6 +1,6 @@
 # rldyour-mimocode Runtime Memory Projection
 
-Last commit: pending chore(release): mimocode 1.7.29 (release_metadata)
+Last commit: pending feat(browser): enforce managed CloakBrowser skill boundary (other)
 
 This file is the MiMoCode-native project memory projection for the
 `rldyour-mimocode` adapter.
@@ -8,7 +8,7 @@ This file is the MiMoCode-native project memory projection for the
 Current facts:
 
 1. Adapter id: `mimocode`.
-2. Adapter version: `1.7.29`.
+2. Adapter version: `1.7.30`.
 3. Runtime baseline: MiMoCode `0.1.5`.
 4. Runtime binary: `mimo`.
 5. Upstream source: `https://github.com/XiaomiMiMo/MiMo-Code`.

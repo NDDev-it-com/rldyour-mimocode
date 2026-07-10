@@ -1,54 +1,26 @@
 # Changelog
 
-## [1.7.10] - 2026-06-29
-
-### Fixed
-
-- Harden Ruff and Pyright baseline across adapter configs.
-
-## [1.7.7] - 2026-06-27
-
-### Changed
-
-- Refresh shadcn MCP runtime pin to the latest published 4.12.0 release.
-
-## [1.7.6] - 2026-06-26
-
-### Changed
-
-- Sync Serena release memories after runtime and MCP refresh.
-
-## [1.7.5] - 2026-06-26
-
-### Changed
-
-- Refresh CLI runtime and MCP pins to latest stable versions.
-
-## [1.7.4] - 2026-06-26
-
-### Fixed
-
-- Publish a clean follow-up release with a valid Conventional Commit head subject after the 1.7.3 release commit subject included literal quotes.
-
-## [1.7.3] - 2026-06-26
-
-### Fixed
-
-- State that the `1.7.x` support label tracks only the latest released patch in the security policy.
-
-## [1.7.2] - 2026-06-26
-
-### Fixed
-
-- Align README memory heading with the shared tracked-context adapter template.
-
-## [1.7.1] - 2026-06-26
-
-### Fixed
-
-- Sync generated cmux worker/orchestrator skill projections with the tracked-context branch model.
-
 ## [Unreleased]
+
+## [1.7.30] - 2026-07-10
+
+### Security
+
+- Reduce browser execution to the bootstrap-owned CloakBrowser boundary: exact
+  managed Playwright CLI and Chrome DevTools MCP transports, mandatory health
+  verification before every browser action, and no fallback.
+- Retain `webwright-task` only as compatibility intent routed through
+  `browser-review`; forbid Webwright runtime execution, MiMoCode built-in/raw
+  browser surfaces, direct packages, and alternate CDP/executable/config paths.
+- Add exact policy validation and mutation tests for provider inventory,
+  required surface boundaries, unsafe agent permissions, alternate paths,
+  ungated actions, and unapproved shell execution.
+
+### Changed
+
+- Preserve the verified MiMoCode `0.1.5`, Playwright CLI `0.1.17`, and Chrome
+  DevTools MCP `1.5.0` runtime baselines while aligning native MiMoCode skill,
+  agent, command, contract, documentation, and release surfaces.
 
 ## [1.7.29] - 2026-07-10
 
@@ -197,6 +169,12 @@
 
 - Enforce five-adapter validation parity and structured release evidence
 
+## [1.7.10] - 2026-06-29
+
+### Fixed
+
+- Harden Ruff and Pyright baseline across adapter configs.
+
 ## [1.7.9] - 2026-06-27
 
 ### Fixed
@@ -208,6 +186,51 @@
 ### Fixed
 
 - Refresh setup-python action pin.
+
+## [1.7.7] - 2026-06-27
+
+### Changed
+
+- Refresh shadcn MCP runtime pin to the latest published 4.12.0 release.
+
+## [1.7.6] - 2026-06-26
+
+### Changed
+
+- Sync Serena release memories after runtime and MCP refresh.
+
+## [1.7.5] - 2026-06-26
+
+### Changed
+
+- Refresh CLI runtime and MCP pins to latest stable versions.
+
+## [1.7.4] - 2026-06-26
+
+### Fixed
+
+- Publish a clean follow-up release with a valid Conventional Commit head
+  subject after the 1.7.3 release commit subject included literal quotes.
+
+## [1.7.3] - 2026-06-26
+
+### Fixed
+
+- State that the `1.7.x` support label tracks only the latest released patch in
+  the security policy.
+
+## [1.7.2] - 2026-06-26
+
+### Fixed
+
+- Align README memory heading with the shared tracked-context adapter template.
+
+## [1.7.1] - 2026-06-26
+
+### Fixed
+
+- Sync generated cmux worker/orchestrator skill projections with the
+  tracked-context branch model.
 
 ## [1.7.0] - 2026-06-26
 

@@ -1,16 +1,26 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "required_backend": "cloakbrowser",
   "fallback_allowed": false,
+  "health_gate": {
+    "command": "$HOME/.local/bin/cloakbrowser-cdp-health",
+    "required_before_every_action": true,
+    "failure_result": "NOT_PROVEN"
+  },
+  "active_providers": [
+    "playwright-cli",
+    "chrome-devtools-mcp"
+  ],
   "providers": {
-    "webwright": {
-      "kind": "high-level-browser-workflow",
-      "mcp": false
-    },
     "playwright-cli": {
-      "kind": "low-level-browser-automation",
+      "kind": "browser-automation",
       "mcp": false,
-      "version": "0.1.17"
+      "version": "0.1.17",
+      "executable": "$HOME/.local/bin/playwright-cli",
+      "forbidden_arguments": [
+        "run-code",
+        "--filename"
+      ]
     },
     "chrome-devtools-mcp": {
       "kind": "devtools-debugging",
@@ -24,13 +34,36 @@
     }
   },
   "routing": {
-    "long_horizon_web_task": "webwright",
+    "long_horizon_web_task": "playwright-cli",
     "screenshots_snapshots_traces": "playwright-cli",
-    "console_network_performance_memory_lighthouse": "chrome-devtools-mcp"
+    "console_network_runtime_layout_performance_memory_lighthouse": "chrome-devtools-mcp"
   },
+  "compatibility_workflows": {
+    "webwright-task": {
+      "route": "browser-review",
+      "runtime_provider": "webwright",
+      "runtime_execution_allowed": false,
+      "failure_result": "NOT_PROVEN"
+    }
+  },
+  "forbidden_runtime_providers": [
+    "webwright",
+    "stock-browser",
+    "raw-browser",
+    "in-app-browser",
+    "browser_agent",
+    "node_repl",
+    "computer-use",
+    "playwright-mcp",
+    "raw-playwright",
+    "direct-package-browser-provider",
+    "alternate-cdp",
+    "alternate-browser-executable",
+    "alternate-browser-config"
+  ],
   "mimocode_builtin_browser": {
     "enabled": false,
-    "reason": "MiMoCode does not replace the approved rldyour browser-provider matrix in this release.",
+    "reason": "MiMoCode built-in browser execution is outside the bootstrap-owned CloakBrowser trust boundary.",
     "requires_explicit_provider_model_before_enablement": true
   }
 }

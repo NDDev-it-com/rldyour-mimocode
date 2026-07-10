@@ -8,11 +8,10 @@ validation rules, and command/agent/skill projection.
 ## Source of Truth
 
 - `config/mimocode-baseline.json`
-- `references/mimocode-baseline.json`
 - `.mimocode/mimocode.jsonc`
 - `.mimocode/command/*.md`
 - `.mimocode/agent/*.md`
-- `.mimocode/skill/*/SKILL.md`
+- `.mimocode/skills/*/SKILL.md`
 - `scripts/*.sh`, `scripts/*.py`
 - `config/rldyour-contract.json`
 
@@ -35,16 +34,24 @@ Do not introduce Claude/Antigravity/Codex native config formats as runtime contr
 ## Validation Commands
 
 ```bash
-bash scripts/install_system_mimocode.sh --apply
-bash scripts/doctor_system_mimocode.sh --redact
-python3 scripts/validate_contract.py
+scripts/validate_fast.sh
 python3 scripts/validate_mimocode_runtime_baseline.py
 python3 scripts/validate_mimocode_config.py
 python3 scripts/validate_mimocode_memory_boundary.py
 python3 scripts/validate_mimocode_projection_parity.py
-python3 scripts/validate_instruction_docs.py
+python3 scripts/validate_mimocode_browser_provider_policy.py --strict
 python3 scripts/validate_release_assets.py
 ```
+
+## Browser Boundary
+
+- Run exact `$HOME/.local/bin/cloakbrowser-cdp-health` before every browser
+  action; missing or nonzero health stops as `NOT_PROVEN`.
+- Execute only exact `$HOME/.local/bin/playwright-cli` or the exact managed
+  Chrome DevTools MCP transport in `.mimocode/mimocode.jsonc`.
+- `webwright-task` is compatibility intent routed through `browser-review`.
+  Webwright runtime execution, built-in/raw browser surfaces, direct packages,
+  alternate CDP/executables/configs, and fallbacks are forbidden.
 
 ## Security Policy
 

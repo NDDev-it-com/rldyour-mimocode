@@ -3,7 +3,7 @@
   "adapter": {
     "id": "mimocode",
     "name": "rldyour-mimocode",
-    "version": "1.7.29",
+    "version": "1.7.30",
     "runtime": "mimocode",
     "runtime_binary": "mimo",
     "runtime_package": "@mimo-ai/cli",
@@ -47,9 +47,16 @@
     "context7": "@upstash/context7-mcp@3.2.3"
   },
   "browser_provider_model": {
-    "webwright": "high-level long-horizon browser workflows",
-    "playwright-cli": "low-level screenshots, snapshots, traces, and visual evidence",
-    "chrome-devtools-mcp": "console, network, performance, Lighthouse, memory, and live debugging",
+    "required_backend": "cloakbrowser",
+    "health_gate": "$HOME/.local/bin/cloakbrowser-cdp-health before every browser action",
+    "active_providers": [
+      "playwright-cli",
+      "chrome-devtools-mcp"
+    ],
+    "playwright-cli": "exact managed executable for flows, screenshots, snapshots, traces, visual evidence, and long-horizon stepwise workflows",
+    "chrome-devtools-mcp": "exact managed transport for console, network, runtime, layout, performance, Lighthouse, memory, and live debugging",
+    "webwright-task": "compatibility intent routed through browser-review; Webwright runtime execution forbidden",
+    "fallback_allowed": false,
     "mimocode_builtin_browser": "disabled until separately modeled as an approved provider"
   },
   "memory_model": {

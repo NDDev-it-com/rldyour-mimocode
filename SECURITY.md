@@ -9,7 +9,7 @@ re-released as the current exact tag.
 
 | Version | Supported |
 | --- | --- |
-| Current exact tag `1.7.29` | yes |
+| Current exact tag `1.7.30` | yes |
 | Older minor / major lines | no |
 
 ## Boundary

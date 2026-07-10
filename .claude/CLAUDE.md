@@ -30,11 +30,14 @@ python3 scripts/validate_mimocode_config.py
 python3 scripts/validate_mimocode_runtime_baseline.py
 python3 scripts/validate_mimocode_projection_parity.py
 python3 scripts/validate_mimocode_schema_url.py
-python3 scripts/validate_instruction_docs.py
+python3 scripts/validate_mimocode_browser_provider_policy.py --strict
+scripts/validate_fast.sh
 ```
 
 ## Boundaries
 
 Use MiMoCode-native CLI/project surfaces only.
-Keep browser policy aligned with global rldyour routing (Webwright / Playwright CLI /
-Chrome DevTools MCP).
+Before every browser action, require exact managed CloakBrowser health. Execute
+only exact managed Playwright CLI or the configured managed Chrome DevTools MCP
+transport. `webwright-task` is compatibility intent only; the Webwright runtime
+and every fallback are forbidden.

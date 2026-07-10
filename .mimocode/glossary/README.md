@@ -6,7 +6,7 @@ Preserve these terms exactly in Russian-first command and skill descriptions:
 - rldyour
 - Serena
 - cmux
-- Webwright
+- `webwright-task` (compatibility intent only; runtime forbidden)
 - Playwright CLI
 - Chrome DevTools MCP
 - MCP

@@ -12,9 +12,9 @@ rldyour AI CLI configuration for MiMoCode: native .mimocode config, build/plan/c
 
 | Surface | Value |
 | --- | --- |
-| Adapter version | `1.7.29` |
+| Adapter version | `1.7.30` |
 | Runtime baseline | MiMoCode `0.1.5` |
-| GitHub release tag | `1.7.29` |
+| GitHub release tag | `1.7.30` |
 
 ## What This Repository Provides
 
@@ -116,17 +116,22 @@ which are `deny`. The `plan` agent sets `edit: deny` as its read-only mode.
 
 ## Browser / Design / DevTools Routing
 
-MiMoCode uses the same positive browser-provider inventory as the root control
-plane:
+MiMoCode has exactly two browser execution providers. Before every browser
+action it runs exact `$HOME/.local/bin/cloakbrowser-cdp-health`; missing or
+nonzero health stops as `NOT_PROVEN`, with no fallback:
 
-- **Webwright** - long-horizon web workflows and reusable evidence scripts.
-- **Playwright CLI** - deterministic screenshots, snapshots, traces, and visual
-  evidence.
-- **Chrome DevTools MCP** (managed CloakBrowser wrapper, runtime `1.5.0`) - console, network,
-  performance, memory, Lighthouse, and live Chrome debugging.
+- **Managed Playwright CLI** (`$HOME/.local/bin/playwright-cli`, runtime
+  `0.1.17`) - flows, screenshots, snapshots, traces, responsive evidence, and
+  long-horizon stepwise workflows. `run-code` and `--filename` are forbidden.
+- **Managed Chrome DevTools MCP** (runtime `1.5.0`) - console, network, runtime,
+  DOM/layout, performance, Lighthouse, and memory through the exact wrapper in
+  `.mimocode/mimocode.jsonc`.
 
-MiMoCode built-in or future browser features are disabled as release providers
-until a separate provider model, policy, and validator are added.
+`webwright-task` is compatibility intent routed through `browser-review`; it
+never authorizes Webwright Python execution. Stock/raw/in-app Browser,
+MiMoCode built-in browser execution, `browser_agent`, `node_repl`,
+computer-use, Playwright MCP, raw Playwright, package runners, alternate CDP,
+executables, configs, and all fallbacks are forbidden.
 
 ## Repository Context / Serena Memory
 
