@@ -25,6 +25,7 @@ EXPECTED_TRANSPORT = [
     "/bin/sh",
     "-c",
     'exec "$HOME/.local/bin/chrome-devtools-mcp" --headless --isolated '
+    +
     "--no-usage-statistics --no-performance-crux",
 ]
 EXPECTED_POLICY: dict[str, Any] = {
