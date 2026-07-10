@@ -1,7 +1,7 @@
 <!-- Memory Metadata
 Last updated: 2026-07-10
 Last verified: 2026-07-10
-Last commit: c219a9beb8743a44add8d961733b2fac2d6a69ea chore(release): prepare mimocode 1.7.7 (no-fullrepo)
+Last commit: fc49d21e6a65f86b93c4a1baea6fc8e0c982409f feat(browser): enforce managed CloakBrowser skill boundary (other)
 Scope: MIMOCODE repository knowledge
 Area: MIMOCODE
 -->
@@ -16,11 +16,11 @@ MIMOCODE repository knowledge
 
 ## Last verified
 - date: 2026-07-10
-- commit: `c219a9beb8743a44add8d961733b2fac2d6a69ea`
-- checked by: Codex ry-start memory taxonomy sync
+- commit: `fc49d21e6a65f86b93c4a1baea6fc8e0c982409f`
+- checked by: MiMoCode adapter surface validation
 
 ## Facts
-- Adapter version is `1.7.29`.
+- Adapter version is `1.7.30`.
 - Runtime baseline is MiMoCode `0.1.5` with binary `mimo`.
 - Primary runtime install channel is the parent bootstrap's frozen Bun lock;
   `@mimo-ai/cli@0.1.5` is cross-checked against the official `v0.1.5` release.
@@ -32,7 +32,7 @@ MIMOCODE repository knowledge
 - MiMoCode is an active first-class adapter, not an OpenCode alias.
 
 ## Evidence
-- `commit:c219a9beb8743a44add8d961733b2fac2d6a69ea`
+- `commit:fc49d21e6a65f86b93c4a1baea6fc8e0c982409f`
 - `path:README.md`
 
 ## Known pitfalls

@@ -1,7 +1,7 @@
 <!-- Memory Metadata
-Last updated: 2026-07-07
-Last verified: 2026-07-07
-Last commit: e239f9df6caa67bb408f763b478ea1f2ce49e9f3 chore(release): mimocode 1.7.16 (other)
+Last updated: 2026-07-10
+Last verified: 2026-07-10
+Last commit: fc49d21e6a65f86b93c4a1baea6fc8e0c982409f feat(browser): enforce managed CloakBrowser skill boundary (other)
 Scope: release readiness, versioning, and artifact hygiene
 Area: RELEASE
 -->
@@ -18,11 +18,11 @@ release readiness, versioning, and artifact hygiene
 
 ## Last verified
 - date: 2026-07-10
-- commit: `e239f9df6caa67bb408f763b478ea1f2ce49e9f3`
-- checked by: Codex ry-start memory taxonomy sync
+- commit: `fc49d21e6a65f86b93c4a1baea6fc8e0c982409f`
+- checked by: MiMoCode 1.7.30 release validation
 
 ## Facts
-- Current adapter release is `1.7.29`.
+- Current adapter release is `1.7.30`.
 - Initial adapter release was `1.0.0`.
 - Runtime baseline is MiMoCode `0.1.5`.
 - Public CI must use GitHub-hosted runners and SHA-pinned actions.
@@ -31,7 +31,7 @@ release readiness, versioning, and artifact hygiene
 - Runtime doctor reports `NOT_PROVEN` when `mimo` is unavailable.
 
 ## Evidence
-- `commit:e239f9df6caa67bb408f763b478ea1f2ce49e9f3`
+- `commit:fc49d21e6a65f86b93c4a1baea6fc8e0c982409f`
 - `path:VERSION`
 - `path:CHANGELOG.md`
 - `path:.github/workflows/release.yml`

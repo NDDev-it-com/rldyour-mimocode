@@ -1,7 +1,7 @@
 <!-- Memory Metadata
 Last updated: 2026-07-10
 Last verified: 2026-07-10
-Last commit: c219a9beb8743a44add8d961733b2fac2d6a69ea chore(release): prepare mimocode 1.7.7 (no-fullrepo)
+Last commit: fc49d21e6a65f86b93c4a1baea6fc8e0c982409f feat(browser): enforce managed CloakBrowser skill boundary (other)
 Scope: repository identity and source-of-truth map
 Area: CORE
 -->
@@ -18,12 +18,12 @@ repository identity and source-of-truth map
 
 ## Last verified
 - date: 2026-07-10
-- commit: `c219a9beb8743a44add8d961733b2fac2d6a69ea`
-- checked by: Codex ry-start memory taxonomy sync
+- commit: `fc49d21e6a65f86b93c4a1baea6fc8e0c982409f`
+- checked by: MiMoCode repository contract validation
 
 ## Facts
 - `rldyour-mimocode` is the MiMoCode-native adapter repository.
-- The current adapter release is `1.7.29`.
+- The current adapter release is `1.7.30`.
 - The runtime baseline is MiMoCode `0.1.5` with binary `mimo`.
 - The adapter owns `.mimocode` config, agent, command, skill, MCP, browser,
   cmux-worker, and runtime memory projection surfaces.
@@ -31,7 +31,7 @@ repository identity and source-of-truth map
   tracked MiMoCode runtime projection generated from verified facts.
 
 ## Evidence
-- `commit:c219a9beb8743a44add8d961733b2fac2d6a69ea`
+- `commit:fc49d21e6a65f86b93c4a1baea6fc8e0c982409f`
 - `path:README.md`
 - `path:VERSION`
 - `path:CHANGELOG.md`

@@ -1,7 +1,7 @@
 <!-- Memory Metadata
-Last updated: 2026-05-22
-Last verified: 2026-05-22
-Last commit: c219a9beb8743a44add8d961733b2fac2d6a69ea chore(release): prepare mimocode 1.7.7 (no-fullrepo)
+Last updated: 2026-07-10
+Last verified: 2026-07-10
+Last commit: fc49d21e6a65f86b93c4a1baea6fc8e0c982409f feat(browser): enforce managed CloakBrowser skill boundary (other)
 Scope: browser-visible validation and debugging workflows
 Area: BROWSER
 -->
@@ -13,24 +13,35 @@ browser-visible validation and debugging workflows
 
 ## Current source of truth
 - `path:README.md`
+- `path:config/browser-provider-policy.json`
+- `path:.mimocode/skills/browser-review/SKILL.md`
+- `path:.mimocode/agent/rldyour-browser-worker.md`
+- `path:.mimocode/command/browser-review.md`
+- `path:scripts/validate_mimocode_browser_provider_policy.py`
 
 ## Last verified
-- date: 2026-05-22
-- commit: `c219a9beb8743a44add8d961733b2fac2d6a69ea`
-- checked by: Codex ry-start memory taxonomy sync
+- date: 2026-07-10
+- commit: `fc49d21e6a65f86b93c4a1baea6fc8e0c982409f`
+- checked by: MiMoCode fail-closed browser policy validation
 
 ## Facts
-- Webwright is the high-level long-horizon browser workflow provider.
-- Playwright CLI is the low-level screenshot, snapshot, trace, and visual
-  evidence provider.
-- Chrome DevTools MCP is the console, network, performance, memory,
-  Lighthouse, and live-debug provider.
-- MiMoCode built-in or future browser features are disabled as release
-  providers until a separate provider model and validator are added.
+- Every browser action first runs exact
+  `$HOME/.local/bin/cloakbrowser-cdp-health`; missing or nonzero health stops as
+  `NOT_PROVEN` with no fallback.
+- Active browser execution is limited to exact managed Playwright CLI and the
+  exact managed Chrome DevTools MCP transport. `run-code` and `--filename` are
+  forbidden.
+- `webwright-task` is compatibility intent routed through `browser-review`.
+  Webwright runtime, MiMoCode built-in/raw browser surfaces, direct packages,
+  alternate CDP/executable/config paths, and fallbacks are forbidden.
+- The browser skill, agent, and command each carry the exact mandatory boundary;
+  the agent also denies webfetch and task delegation.
 
 ## Evidence
-- `commit:c219a9beb8743a44add8d961733b2fac2d6a69ea`
+- `commit:fc49d21e6a65f86b93c4a1baea6fc8e0c982409f`
 - `path:README.md`
+- `path:config/browser-provider-policy.json`
+- `path:scripts/validate_mimocode_browser_provider_policy.py`
 
 ## Known pitfalls
 - Treat this memory as derived context. Current code, configuration, runtime output, and GitHub state override stale memory text.
@@ -67,6 +78,8 @@ Update after verified changes to the referenced source-of-truth files.
 
 ## Validation Commands
 
+- Run `python3 scripts/validate_mimocode_browser_provider_policy.py --strict`.
+- Run `python3 -m pytest -q tests/test_mimocode_browser_policy.py`.
 - Run the rldyour control-plane Serena memory validators in strict mode: `validate_serena_memory_schema` (`--strict-mode strict-all`) and `validate_serena_memory_semantics` (`--strict-current-facts --strict-metadata-dates --strict-evidence-commits`).
 
 ## Repair Procedure
