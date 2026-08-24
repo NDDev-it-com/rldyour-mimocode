@@ -2,6 +2,13 @@
 
 ## [Unreleased]
 
+## [1.7.32] - 2026-08-25
+
+### Fixed
+
+- Advance every reusable CI caller to the released OpenNetwork workflow engine
+  `0.1.8`, restoring root control-plane security capability proof.
+
 
 ## [1.7.31] - 2026-07-10
 
