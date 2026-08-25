@@ -26,10 +26,10 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/NDDev-it-com/rldyour-mimocode"
-Repository = "https://github.com/NDDev-it-com/rldyour-mimocode"
-Issues = "https://github.com/NDDev-it-com/rldyour-mimocode/issues"
-Changelog = "https://github.com/NDDev-it-com/rldyour-mimocode/blob/main/CHANGELOG.md"
+Homepage = "https://github.com/rldyourmnd/rldyour-mimocode"
+Repository = "https://github.com/rldyourmnd/rldyour-mimocode"
+Issues = "https://github.com/rldyourmnd/rldyour-mimocode/issues"
+Changelog = "https://github.com/rldyourmnd/rldyour-mimocode/blob/main/CHANGELOG.md"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

@@ -210,7 +210,7 @@ required to pass the static release gate.
 ## Release / Rollback
 
 Adapter releases are numeric-tag-driven. Each supported product version must
-have a matching GitHub Release at `NDDev-it-com/rldyour-mimocode`. The
+have a matching GitHub Release at `rldyourmnd/rldyour-mimocode`. The
 `VERSION` file, `CHANGELOG.md`, and `SECURITY.md` are the three required public
 surfaces. The default version movement is patch (`+0.0.1`); minor and major
 bumps are owner-directed only.
@@ -227,7 +227,7 @@ License: `AGPL-3.0-or-later`. See `LICENSE`.
 Author: Danil Silantyev (github:rldyourmnd), CEO NDDev.
 
 Report security issues through **GitHub Security Advisories** for this
-repository (`NDDev-it-com/rldyour-mimocode`). For MiMoCode runtime
+repository (`rldyourmnd/rldyour-mimocode`). For MiMoCode runtime
 vulnerabilities, also follow `XiaomiMiMo/MiMo-Code` upstream security
 reporting guidance.
 
